@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link href="css/screen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/index.html"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li  class="active" ><a href="/index.html">Home</a></li>
+                <li
+                ><a href="/archives.html">Archives</a></li>
+                
+                <li
+                >
+                <a href="/pages/about.html">About</a>
+                </li>
+                
+                <li><a href="/feed.xml">RSS</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+
+
+<div class="container">
+
+
+    <div class="row">
+        <div class="col-lg-9">
+            <div id="content">
+                
+<div id="post">
+    <div class="post-header">
+    <div id="post-meta" class="row">
+        <div class="col-lg-6">September 16, 2015</div>
+        
+    </div>
+    <h2>JS meetup presentation on prototyping with redux</h2>
+</div>
+<div>
+    
+    <hr/><h4><a name="live&#95;coding&#95;with&#95;<a&#95;href='https://github.com/rackt/redux'>redux</a>&#95;and&#95;hot&#95;code&#95;swap."></a>Live coding with <a href='https://github.com/rackt/redux'>redux</a> and hot code swap.</h4><hr/>When asked to give a talk a couple days before the JS meetup in Shanghai I decided that saying "maybe next time" for the fourth (fifth?) time would be too lame and that I needed to man up and find the time to prepare.<hr/><p><img style="width: 100%" src="img/meetupsh.jpeg" /></p><p>I had long since had the idea of making a brainstorming tool, a way to add a concept and be able to connect it to others.</p><p>I also wanted to demonstrate how nice JavaScript is becoming with newly emerging tools and (light) frameworks. The topic "rapid prototyping with short development cycle" was coined. On the mobile SPA overhaul of the data.worldbank.org redux was chosen and it has been great and pretty stable, increasing development speed (and thus joy).</p><p>I talked about how the following:<ul><li>Running through the set-up steps to get a hotloading react/redux project.</li><li>Setting up a basic store and reducer function for listening to actions that modify the graph state (a brainstorm perfectly fits a graph!).</li><li>Adding actions for adding/removing/merging and moving concepts.</li><li>Switching to immutable.js to easily compare current app state vs the wanted state to look like and add React components that visualize these data structures. </li></ul><ul><li>Added a d3 force directed graph that displays the concepts as bubbles. </li></ul><ul><li>Ran out of time writing the <a href='https://github.com/bbss/brainstorm-app-redux-prototype/commit/8622a83a7f84be46c88830e632654b974d1141ac#diff-14b1e33d5bf5649597cdc0e4f684daddR46'>recursive-reducing</a> function that collects the links (edges) between concepts (nodes). </li></ul>I prepared a quick demo of the process and uploaded the slides and different steps to the branches of <a href='https://github.com/bbss/brainstorm-app-redux-prototype'>a github repo</a></p><p>You can follow along the slides (and switch branches accordingly) if you'd like to get an impression of that the next JavaScript standard will be like with hot code swapping.</p><hr/>I'd like to continue developing this app and add things like textareas, selecting bubbles and drag and dropping to merge them. Later also adding collaboration features through time constrained "phases" that allow to vote for merging/expanding/finishing eachothers mindmaps in a democratic way. Brainstorming is usually a group activity after all!<p>Maybe that might be cool to do while learning <a href='https://github.com/Day8/re-frame'>ClojureScripts Re-Frame framework</a>.</p>
+</div>
+
+<div id="post-tags">
+    <b>Tags: </b>
+    
+    <a href="/tags/redux.html">redux</a>
+    
+    <a href="/tags/d3.html">d3</a>
+    
+    <a href="/tags/JavaScript.html">JavaScript</a>
+    
+    <a href="/tags/brainstorm.html">brainstorm</a>
+    
+</div>
+
+
+    
+
+    <div id="prev-next">
+        
+        
+        <a class="right" href="/posts/2015-09-04-choropleth-data-dot.html">Choropleth dataDot &raquo;</a>
+        
+    </div>
+</div>
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div id="sidebar">
+                
+                <div id="recent">
+                    <h3>Recent Posts</h3>
+                    <ul>
+                        
+                        <li><a href="/posts/2015-09-16-js-meetup-redux-brainstrom-presentation.html">JS meetup presentation on prototyping with redux</a></li>
+                        
+                        <li><a href="/posts/2015-09-04-choropleth-data-dot.html">Choropleth dataDot</a></li>
+                        
+                        <li><a href="/posts/2015-09-03-blog-epoch.html">Blog Epoch</a></li>
+                        
+                    </ul>
+                </div>
+                
+                
+                <div id="tags">
+                    <h3>Tags</h3>
+                    <ul>
+                        
+                        <li><a href="/tags/datadot.html">datadot</a></li>
+                        
+                        <li><a href="/tags/redux.html">redux</a></li>
+                        
+                        <li><a href="/tags/d3.html">d3</a></li>
+                        
+                        <li><a href="/tags/JavaScript.html">JavaScript</a></li>
+                        
+                        <li><a href="/tags/brainstorm.html">brainstorm</a></li>
+                        
+                        <li><a href="/tags/blog.html">blog</a></li>
+                        
+                        <li><a href="/tags/javascript.html">javascript</a></li>
+                        
+                        <li><a href="/tags/python.html">python</a></li>
+                        
+                        <li><a href="/tags/worldbank.html">worldbank</a></li>
+                        
+                        <li><a href="/tags/code.html">code</a></li>
+                        
+                        <li><a href="/tags/lighttable.html">lighttable</a></li>
+                        
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <footer>Copyright &copy; 2015 Baruch Berger
+        <p style="text-align: center;">Powered by <a href="http://cryogenweb.org">Cryogen</a></p></footer>
+</div>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="js/highlight.pack.js" type="text/javascript"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+</body>
+</html>
