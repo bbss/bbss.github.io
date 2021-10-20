@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+         html {
+
+         }
+         *, *::after, *::before {
+             box-sizing: border-box; margin: 0; padding: 0;}
+         .fill-available {
+             height: 100vh;
+             height: -moz-available;
+             height: -webkit-fill-available;
+             height: fill-available;
+         }
+         body {
+
+         }
+
+         .device {
+             position: relative;
+             margin: 40px auto;
+             border-radius: 40px;
+             box-shadow: 0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111;
+
+             &:before,
+             &:after{
+                 content: '';
+                 position: absolute;
+                 left: 50%;
+                 transform: translateX(-50%);
+             }
+             &:after {
+                 bottom: 7px;
+                 width: 140px;
+                 height: 4px;
+                 background-color: #f2f2f2;
+                 border-radius: 10px;
+             }
+         }
+        </style>
+        <title>Baruch Berger</title>
+        <meta charset="utf-8">
+        <meta content="text/html; charset=UTF-8" http-equiv="Content-type">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="app" />
+        <script src="js/main/app.js"></script>
+    </body>
+</html>

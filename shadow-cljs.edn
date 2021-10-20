@@ -1,0 +1,12 @@
+{:nrepl  {:port 11002}
+ :deps   {:aliases [:cljs]}
+ :builds {:main
+          {:target     :browser
+           :output-dir "resources/public/js/main"
+           :asset-path "/js/main"
+           :compiler-options {:infer-externs :auto
+                              :output-feature-set :es6}
+           :modules    {:app {:init-fn bbss.portfolio/init
+                              :entries [bbss.portfolio]}}
+           :devtools   {:preloads   [com.fulcrologic.fulcro.inspect.preload]}}}
+ :dev-http {8000 "resources/public"}}

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@js-joda/core": "3.2.0",
+    "@js-joda/locale_en-us": "3.1.1",
+    "@js-joda/timezone": "2.5.0",
+    "@material-ui/core": "^4.12.3",
+    "@react-spring/parallax": "^9.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-intersection-observer": "^8.32.1",
+    "react-refresh": "0.8.1",
+    "react-spring": "^9.3.0",
+    "react-use-measure": "^2.0.4",
+    "shadow-cljs": "^2.15.12",
+    "three": "^0.133.1"
+  }
+}
