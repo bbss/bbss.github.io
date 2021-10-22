@@ -13,8 +13,8 @@ return name_str;
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(name_str.substring((0),(1)),"'")){
 return name_str.substring((1));
 } else {
-return name_str.replace(helix.impl.props.camel_regexp,(function (p1__66277_SHARP_,p2__66276_SHARP_){
-return p2__66276_SHARP_.toUpperCase();
+return name_str.replace(helix.impl.props.camel_regexp,(function (p1__66345_SHARP_,p2__66344_SHARP_){
+return p2__66344_SHARP_.toUpperCase();
 }));
 
 }
@@ -33,17 +33,17 @@ return [kw_ns,"/",kw_name].join('');
 }
 });
 helix.impl.props.set_obj = (function helix$impl$props$set_obj(o,k,v){
-var G__66282 = o;
-goog.object.set(G__66282,k,v);
+var G__66347 = o;
+goog.object.set(G__66347,k,v);
 
-return G__66282;
+return G__66347;
 });
 helix.impl.props.__GT_js = (function helix$impl$props$__GT_js(x){
 return cljs.core.clj__GT_js.cljs$core$IFn$_invoke$arity$variadic(x,cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.Keyword(null,"keyword-fn","keyword-fn",-64566675),cljs.core.comp.cljs$core$IFn$_invoke$arity$2(helix.impl.props.camel_case,cljs.core.name)], 0));
 });
 helix.impl.props.primitive_obj = (function helix$impl$props$primitive_obj(var_args){
-var G__66285 = arguments.length;
-switch (G__66285) {
+var G__66351 = arguments.length;
+switch (G__66351) {
 case 0:
 return helix.impl.props.primitive_obj.cljs$core$IFn$_invoke$arity$0();
 
@@ -73,12 +73,12 @@ return helix.impl.props.primitive_obj.cljs$core$IFn$_invoke$arity$2(m,helix.impl
 (helix.impl.props.primitive_obj.cljs$core$IFn$_invoke$arity$2 = (function (m,o){
 while(true){
 if(cljs.core.seq(m)){
-var G__66316 = cljs.core.rest(m);
-var G__66317 = (function (){var entry = cljs.core.first(m);
+var G__66360 = cljs.core.rest(m);
+var G__66361 = (function (){var entry = cljs.core.first(m);
 return helix.impl.props.set_obj(o,helix.impl.props.camel_case(helix.impl.props.kw__GT_str(cljs.core.key(entry))),helix.impl.props.__GT_js(cljs.core.val(entry)));
 })();
-m = G__66316;
-o = G__66317;
+m = G__66360;
+o = G__66361;
 continue;
 } else {
 return o;
@@ -96,10 +96,10 @@ helix.impl.props.merge_obj = (function helix$impl$props$merge_obj(o1,o2){
 if((o2 == null)){
 return o1;
 } else {
-var G__66288 = o1;
-goog.object.extend(G__66288,o2);
+var G__66353 = o1;
+goog.object.extend(G__66353,o2);
 
-return G__66288;
+return G__66353;
 }
 });
 helix.impl.props.seq_to_class = (function helix$impl$props$seq_to_class(class$){
@@ -137,8 +137,8 @@ return style;
 }
 });
 helix.impl.props._native_props = (function helix$impl$props$_native_props(var_args){
-var G__66290 = arguments.length;
-switch (G__66290) {
+var G__66355 = arguments.length;
+switch (G__66355) {
 case 1:
 return helix.impl.props._native_props.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -164,13 +164,13 @@ return m;
 (helix.impl.props._native_props.cljs$core$IFn$_invoke$arity$2 = (function (m,o){
 while(true){
 if(cljs.core.seq(m)){
-var G__66321 = cljs.core.rest(m);
-var G__66322 = (function (){var entry = cljs.core.first(m);
+var G__66363 = cljs.core.rest(m);
+var G__66364 = (function (){var entry = cljs.core.first(m);
 var k = cljs.core.key(entry);
 var v = cljs.core.val(entry);
-var G__66293 = k;
-var G__66293__$1 = (((G__66293 instanceof cljs.core.Keyword))?G__66293.fqn:null);
-switch (G__66293__$1) {
+var G__66356 = k;
+var G__66356__$1 = (((G__66356 instanceof cljs.core.Keyword))?G__66356.fqn:null);
+switch (G__66356__$1) {
 case "class":
 return helix.impl.props.set_obj(o,"className",helix.impl.props.normalize_class(v));
 
@@ -192,8 +192,8 @@ return helix.impl.props.set_obj(o,helix.impl.props.camel_case(helix.impl.props.k
 
 }
 })();
-m = G__66321;
-o = G__66322;
+m = G__66363;
+o = G__66364;
 continue;
 } else {
 return o;
@@ -205,8 +205,8 @@ break;
 (helix.impl.props._native_props.cljs$lang$maxFixedArity = 2);
 
 helix.impl.props._props = (function helix$impl$props$_props(var_args){
-var G__66301 = arguments.length;
-switch (G__66301) {
+var G__66358 = arguments.length;
+switch (G__66358) {
 case 1:
 return helix.impl.props._props.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -232,12 +232,12 @@ return m;
 (helix.impl.props._props.cljs$core$IFn$_invoke$arity$2 = (function (m,o){
 while(true){
 if(cljs.core.seq(m)){
-var G__66325 = cljs.core.rest(m);
-var G__66326 = (function (){var entry = cljs.core.first(m);
+var G__66367 = cljs.core.rest(m);
+var G__66368 = (function (){var entry = cljs.core.first(m);
 return helix.impl.props.set_obj(o,helix.impl.props.kw__GT_str(cljs.core.key(entry)),cljs.core.val(entry));
 })();
-m = G__66325;
-o = G__66326;
+m = G__66367;
+o = G__66368;
 continue;
 } else {
 return o;

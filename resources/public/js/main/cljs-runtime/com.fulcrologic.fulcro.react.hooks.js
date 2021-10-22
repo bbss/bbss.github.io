@@ -23,8 +23,8 @@ return cljs.core.into_array.cljs$core$IFn$_invoke$arity$1(React.useState(initial
  *   React docs: https://reactjs.org/docs/hooks-reference.html#useeffect
  */
 com.fulcrologic.fulcro.react.hooks.useEffect = (function com$fulcrologic$fulcro$react$hooks$useEffect(var_args){
-var G__67062 = arguments.length;
-switch (G__67062) {
+var G__67074 = arguments.length;
+switch (G__67074) {
 case 1:
 return com.fulcrologic.fulcro.react.hooks.useEffect.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -61,8 +61,8 @@ return React.useContext(ctx);
  *   React docs: https://reactjs.org/docs/hooks-reference.html#usecontext
  */
 com.fulcrologic.fulcro.react.hooks.use_reducer = (function com$fulcrologic$fulcro$react$hooks$use_reducer(var_args){
-var G__67065 = arguments.length;
-switch (G__67065) {
+var G__67076 = arguments.length;
+switch (G__67076) {
 case 2:
 return com.fulcrologic.fulcro.react.hooks.use_reducer.cljs$core$IFn$_invoke$arity$2((arguments[(0)]),(arguments[(1)]));
 
@@ -93,8 +93,8 @@ return cljs.core.into_array.cljs$core$IFn$_invoke$arity$1(React.useReducer(reduc
  *   React docs: https://reactjs.org/docs/hooks-reference.html#usecallback
  */
 com.fulcrologic.fulcro.react.hooks.use_callback = (function com$fulcrologic$fulcro$react$hooks$use_callback(var_args){
-var G__67068 = arguments.length;
-switch (G__67068) {
+var G__67078 = arguments.length;
+switch (G__67078) {
 case 1:
 return com.fulcrologic.fulcro.react.hooks.use_callback.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -125,8 +125,8 @@ return React.useCallback(cb,cljs.core.to_array(args));
  *   React docs: https://reactjs.org/docs/hooks-reference.html#usememo
  */
 com.fulcrologic.fulcro.react.hooks.use_memo = (function com$fulcrologic$fulcro$react$hooks$use_memo(var_args){
-var G__67070 = arguments.length;
-switch (G__67070) {
+var G__67080 = arguments.length;
+switch (G__67080) {
 case 1:
 return com.fulcrologic.fulcro.react.hooks.use_memo.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -157,8 +157,8 @@ return React.useMemo(cb,cljs.core.to_array(args));
  *   React docs: https://reactjs.org/docs/hooks-reference.html#useref
  */
 com.fulcrologic.fulcro.react.hooks.use_ref = (function com$fulcrologic$fulcro$react$hooks$use_ref(var_args){
-var G__67072 = arguments.length;
-switch (G__67072) {
+var G__67082 = arguments.length;
+switch (G__67082) {
 case 0:
 return com.fulcrologic.fulcro.react.hooks.use_ref.cljs$core$IFn$_invoke$arity$0();
 
@@ -197,8 +197,8 @@ return React.useImperativeHandle(ref,f);
  *   React docs: https://reactjs.org/docs/hooks-reference.html#uselayouteffect
  */
 com.fulcrologic.fulcro.react.hooks.use_layout_effect = (function com$fulcrologic$fulcro$react$hooks$use_layout_effect(var_args){
-var G__67074 = arguments.length;
-switch (G__67074) {
+var G__67084 = arguments.length;
+switch (G__67084) {
 case 1:
 return com.fulcrologic.fulcro.react.hooks.use_layout_effect.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -229,8 +229,8 @@ return React.useLayoutEffect(f,cljs.core.to_array(args));
  *   React docs: https://reactjs.org/docs/hooks-reference.html#uselayouteffect
  */
 com.fulcrologic.fulcro.react.hooks.use_debug_value = (function com$fulcrologic$fulcro$react$hooks$use_debug_value(var_args){
-var G__67078 = arguments.length;
-switch (G__67078) {
+var G__67086 = arguments.length;
+switch (G__67086) {
 case 1:
 return com.fulcrologic.fulcro.react.hooks.use_debug_value.cljs$core$IFn$_invoke$arity$1((arguments[(0)]));
 
@@ -342,37 +342,37 @@ return com.fulcrologic.fulcro.rendering.multiple_roots_renderer.deregister_root_
 });
 }),[]);
 
-var parent__58485__auto__ = parent_this;
-var app__58486__auto__ = (function (){var or__4223__auto__ = com.fulcrologic.fulcro.components._STAR_app_STAR_;
+var parent__58509__auto__ = parent_this;
+var app__58510__auto__ = (function (){var or__4223__auto__ = com.fulcrologic.fulcro.components._STAR_app_STAR_;
 if(cljs.core.truth_(or__4223__auto__)){
 return or__4223__auto__;
 } else {
-return com.fulcrologic.fulcro.components.any__GT_app(parent__58485__auto__);
+return com.fulcrologic.fulcro.components.any__GT_app(parent__58509__auto__);
 }
 })();
-var d__58487__auto__ = (function (){var or__4223__auto__ = com.fulcrologic.fulcro.components._STAR_depth_STAR_;
+var d__58511__auto__ = (function (){var or__4223__auto__ = com.fulcrologic.fulcro.components._STAR_depth_STAR_;
 if(cljs.core.truth_(or__4223__auto__)){
 return or__4223__auto__;
 } else {
-return (com.fulcrologic.fulcro.components.depth(parent__58485__auto__) + (1));
+return (com.fulcrologic.fulcro.components.depth(parent__58509__auto__) + (1));
 }
 })();
-var s__58488__auto__ = com.fulcrologic.fulcro.components.shared.cljs$core$IFn$_invoke$arity$1(app__58486__auto__);
-var p__58489__auto__ = (function (){var or__4223__auto__ = com.fulcrologic.fulcro.components._STAR_parent_STAR_;
+var s__58512__auto__ = com.fulcrologic.fulcro.components.shared.cljs$core$IFn$_invoke$arity$1(app__58510__auto__);
+var p__58513__auto__ = (function (){var or__4223__auto__ = com.fulcrologic.fulcro.components._STAR_parent_STAR_;
 if(cljs.core.truth_(or__4223__auto__)){
 return or__4223__auto__;
 } else {
-return parent__58485__auto__;
+return parent__58509__auto__;
 }
 })();
 var _STAR_app_STAR__orig_val__67091 = com.fulcrologic.fulcro.components._STAR_app_STAR_;
 var _STAR_depth_STAR__orig_val__67092 = com.fulcrologic.fulcro.components._STAR_depth_STAR_;
 var _STAR_shared_STAR__orig_val__67093 = com.fulcrologic.fulcro.components._STAR_shared_STAR_;
 var _STAR_parent_STAR__orig_val__67094 = com.fulcrologic.fulcro.components._STAR_parent_STAR_;
-var _STAR_app_STAR__temp_val__67095 = app__58486__auto__;
-var _STAR_depth_STAR__temp_val__67096 = d__58487__auto__;
-var _STAR_shared_STAR__temp_val__67097 = s__58488__auto__;
-var _STAR_parent_STAR__temp_val__67098 = p__58489__auto__;
+var _STAR_app_STAR__temp_val__67095 = app__58510__auto__;
+var _STAR_depth_STAR__temp_val__67096 = d__58511__auto__;
+var _STAR_shared_STAR__temp_val__67097 = s__58512__auto__;
+var _STAR_parent_STAR__temp_val__67098 = p__58513__auto__;
 (com.fulcrologic.fulcro.components._STAR_app_STAR_ = _STAR_app_STAR__temp_val__67095);
 
 (com.fulcrologic.fulcro.components._STAR_depth_STAR_ = _STAR_depth_STAR__temp_val__67096);
@@ -572,7 +572,7 @@ return null;
 } else {
 taoensso.timbre._log_BANG_.cljs$core$IFn$_invoke$arity$11(taoensso.timbre._STAR_config_STAR_,new cljs.core.Keyword(null,"info","info",-317069002),"com.fulcrologic.fulcro.react.hooks",null,325,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"auto","auto",-566279492),(new cljs.core.Delay((function (){
 return new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, ["props updated",root_key], null);
-}),null)),null,1920592763,null);
+}),null)),null,-540635971,null);
 
 (prior_props_ref.current = props);
 

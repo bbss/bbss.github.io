@@ -26,8 +26,8 @@ goog.provide('com.fulcrologic.fulcro.algorithms.lookup');
  *   Returns nil if the algorithm is currently undefined.
  *   
  */
-com.fulcrologic.fulcro.algorithms.lookup.app_algorithm = (function com$fulcrologic$fulcro$algorithms$lookup$app_algorithm(p__55122,k){
-var map__55123 = p__55122;
+com.fulcrologic.fulcro.algorithms.lookup.app_algorithm = (function com$fulcrologic$fulcro$algorithms$lookup$app_algorithm(p__55121,k){
+var map__55123 = p__55121;
 var map__55123__$1 = cljs.core.__destructure_map(map__55123);
 var app = map__55123__$1;
 var algorithms = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__55123__$1,new cljs.core.Keyword("com.fulcrologic.fulcro.application","algorithms","com.fulcrologic.fulcro.application/algorithms",-397334538));

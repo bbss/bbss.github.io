@@ -7,6 +7,8 @@ var module$node_modules$react_dom$index=shadow.js.require("module$node_modules$r
 var module$node_modules$$material_ui$core$esm$styles$index=shadow.js.require("module$node_modules$$material_ui$core$esm$styles$index", {});
 var module$node_modules$$material_ui$core$index=shadow.js.require("module$node_modules$$material_ui$core$index", {});
 var module$node_modules$react_use_measure$dist$web_cjs=shadow.js.require("module$node_modules$react_use_measure$dist$web_cjs", {});
+bbss.portfolio.orange = "#fadeac";
+bbss.portfolio.gray = "#929EA6";
 bbss.portfolio.SPA = cljs.core.atom.cljs$core$IFn$_invoke$arity$1(cljs.core.PersistentArrayMap.EMPTY);
 bbss.portfolio.init = (function bbss$portfolio$init(){
 cljs.core.println.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2(["init"], 0));
@@ -24,40 +26,40 @@ return module$node_modules$react_dom$index.render(module$node_modules$react$inde
 });
 bbss.portfolio.pages = new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.Symbol(null,"intro","intro",754440928,null),new cljs.core.Symbol(null,"korean.tools","korean.tools",1344965852,null),new cljs.core.Symbol(null,"aircraft-noise","aircraft-noise",1838063090,null),new cljs.core.Symbol(null,"cljsc2","cljsc2",-1734546000,null),new cljs.core.Symbol(null,"data.worldbank.org","data.worldbank.org",-1557972304,null)], null);
 
-bbss.portfolio.arrow_down = (function (){var G__106867 = (function bbss$portfolio$arrow_down(props__48880__auto__,maybe_ref__48881__auto__){
-var vec__106868 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__48880__auto__),maybe_ref__48881__auto__], null);
+bbss.portfolio.arrow_down = (function (){var G__358475 = (function bbss$portfolio$arrow_down(props__66614__auto__,maybe_ref__66615__auto__){
+var vec__358476 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__66614__auto__),maybe_ref__66615__auto__], null);
 
-return helix.core.get_react().createElement("svg",(function (){var obj106872 = ({"height":(37),"viewBox":"0 0 24 37","width":"24","xmlns":"http://www.w3.org/2000/svg"});
-return obj106872;
-})(),helix.core.get_react().createElement("g",(function (){var obj106874 = ({"fill":"none","fillRule":"evenodd","stroke":"#000","strokeLinecap":"square","strokeWidth":"2.8","transform":"translate(2 1)"});
-return obj106874;
-})(),helix.core.get_react().createElement("path",(function (){var obj106876 = ({"d":"m2.82418338 30.8044364 13.57954542-.0568182.0568182-13.5795454","transform":"matrix(.70710678 .70710678 -.70710678 .70710678 19.785027 .20723)"});
-return obj106876;
-})()),helix.core.get_react().createElement("path",(function (){var obj106878 = ({"d":"m9.54545455.45075758v30.65151512"});
-return obj106878;
+return helix.core.get_react().createElement("svg",(function (){var obj358480 = ({"height":(37),"viewBox":"0 0 24 37","width":"24","xmlns":"http://www.w3.org/2000/svg"});
+return obj358480;
+})(),helix.core.get_react().createElement("g",(function (){var obj358482 = ({"fill":"none","fillRule":"evenodd","stroke":"#000","strokeLinecap":"square","strokeWidth":"2.8","transform":"translate(2 1)"});
+return obj358482;
+})(),helix.core.get_react().createElement("path",(function (){var obj358484 = ({"d":"m2.82418338 30.8044364 13.57954542-.0568182.0568182-13.5795454","transform":"matrix(.70710678 .70710678 -.70710678 .70710678 19.785027 .20723)"});
+return obj358484;
+})()),helix.core.get_react().createElement("path",(function (){var obj358486 = ({"d":"m9.54545455.45075758v30.65151512"});
+return obj358486;
 })())));
 });
 if(goog.DEBUG === true){
-var G__106879 = G__106867;
-goog.object.set(G__106879,"displayName","bbss.portfolio/arrow-down");
+var G__358487 = G__358475;
+goog.object.set(G__358487,"displayName","bbss.portfolio/arrow-down");
 
-return G__106879;
+return G__358487;
 } else {
-return G__106867;
+return G__358475;
 }
 })();
 
 
 
-bbss.portfolio.hamburger_video_points = new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Has big searchable dictionary and example dataset",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(0)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Creates study of any Korean text or image (e.g. page of a book)",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(4)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Scans sentences, grammar, dictionary matches, translations",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(8)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Creates interactive view to aid understanding text",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(15)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Saves words for spaced-repetition memory practice",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(42)], null)], null);
-bbss.portfolio.korean_tools_tt = new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Has great client-server story"], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Uses explicit state-machines in the UI where logic isn't trivial"], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Inspectable normalized data on front-end"], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Form-state makes server mutations minimal and unintrusive"], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Intuitive data resolution from many datasources on back-end"], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Makes use of fancy neural network tech for page content and Korean grammar analysis"], null)], null);
+bbss.portfolio.hamburger_video_points = new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Has big searchable dictionary and example dataset",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(0)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Creates study of any Korean text or image (e.g. page of a book)",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(4)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Scans sentences, dictionary matches, grammar",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(8)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Creates interactive view to aid understanding text",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(15)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Saves words for spaced-repetition memory practice",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(42)], null)], null);
+bbss.portfolio.korean_tools_tt = new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Has great client-server story"], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Uses explicit state-machines in the UI where logic isn't trivial"], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Inspectable normalized data on front-end"], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Form-state makes server mutations minimal and unintrusive"], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Intuitive data resolution from many datasources"], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Fancy neuralnet tech for content and Korean grammar analysis"], null)], null);
 bbss.portfolio.get_point_index = (function bbss$portfolio$get_point_index(points,at_time){
-return ((function (){var or__4223__auto__ = cljs.core.some((function (p__106880){
-var vec__106881 = p__106880;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106881,(0),null);
-var map__106884 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106881,(1),null);
-var map__106884__$1 = cljs.core.__destructure_map(map__106884);
-var starts_at = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__106884__$1,new cljs.core.Keyword(null,"starts-at","starts-at",-624383465));
+return ((function (){var or__4223__auto__ = cljs.core.some((function (p__358488){
+var vec__358489 = p__358488;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358489,(0),null);
+var map__358492 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358489,(1),null);
+var map__358492__$1 = cljs.core.__destructure_map(map__358492);
+var starts_at = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358492__$1,new cljs.core.Keyword(null,"starts-at","starts-at",-624383465));
 if((at_time < starts_at)){
 return index;
 } else {
@@ -72,16 +74,16 @@ return cljs.core.count(points);
 })() - (1));
 });
 bbss.portfolio.use_window_dimensions = (function bbss$portfolio$use_window_dimensions(){
-var vec__106885 = module$node_modules$react$index.useState(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [window.innerWidth,window.innerHeight], null));
-var dims = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106885,(0),null);
-var set_dims = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106885,(1),null);
+var vec__358493 = module$node_modules$react$index.useState(new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [window.innerWidth,window.innerHeight], null));
+var dims = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358493,(0),null);
+var set_dims = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358493,(1),null);
 module$node_modules$react$index.useEffect((function (){
 var handler = (function (){
 if(cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(dims,new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [window.innerWidth,window.innerHeight], null))){
 return null;
 } else {
-var G__106888 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [window.innerWidth,window.innerHeight], null);
-return (set_dims.cljs$core$IFn$_invoke$arity$1 ? set_dims.cljs$core$IFn$_invoke$arity$1(G__106888) : set_dims.call(null,G__106888));
+var G__358496 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [window.innerWidth,window.innerHeight], null);
+return (set_dims.cljs$core$IFn$_invoke$arity$1 ? set_dims.cljs$core$IFn$_invoke$arity$1(G__358496) : set_dims.call(null,G__358496));
 }
 });
 window.addEventListener("resize",handler);
@@ -94,24 +96,22 @@ return window.removeEventListener("resize",handler);
 return dims;
 });
 
-bbss.portfolio.KoreanTools = (function (){var G__106891 = (function bbss$portfolio$KoreanTools(props__48880__auto__,maybe_ref__48881__auto__){
-var vec__106892 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__48880__auto__),maybe_ref__48881__auto__], null);
-var map__106895 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106892,(0),null);
-var map__106895__$1 = cljs.core.__destructure_map(map__106895);
-var to_page = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__106895__$1,new cljs.core.Keyword(null,"to-page","to-page",-1069954033));
+bbss.portfolio.KoreanTools = (function (){var G__358499 = (function bbss$portfolio$KoreanTools(props__66614__auto__,maybe_ref__66615__auto__){
+var vec__358500 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__66614__auto__),maybe_ref__66615__auto__], null);
+var map__358503 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358500,(0),null);
+var map__358503__$1 = cljs.core.__destructure_map(map__358503);
+var to_page = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358503__$1,new cljs.core.Keyword(null,"to-page","to-page",-1069954033));
 
 var video_ref = module$node_modules$react$index.useRef();
-var thin_QMARK_ = module$node_modules$$material_ui$core$index.useMediaQuery("(max-width: 1000px)");
-var long_QMARK_ = module$node_modules$$material_ui$core$index.useMediaQuery("(min-height: 804px)");
-var vec__106896 = module$node_modules$react$index.useState((0));
-var highlighted_point = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106896,(0),null);
-var set_point = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106896,(1),null);
-var vec__106899 = module$node_modules$react$index.useState(false);
-var hovered_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106899,(0),null);
-var set_hovered_BANG_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106899,(1),null);
-var vec__106902 = module$node_modules$react$index.useState("points");
-var selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106902,(0),null);
-var set_selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106902,(1),null);
+var vec__358504 = module$node_modules$react$index.useState((0));
+var highlighted_point = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358504,(0),null);
+var set_point = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358504,(1),null);
+var vec__358507 = module$node_modules$react$index.useState(false);
+var hovered_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358507,(0),null);
+var set_hovered_BANG_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358507,(1),null);
+var vec__358510 = module$node_modules$react$index.useState("points");
+var selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358510,(0),null);
+var set_selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358510,(1),null);
 var is_mobile_QMARK_ = (function (){var ua = navigator.userAgent.toLowerCase();
 var or__4223__auto__ = ua.includes("ipad");
 if(cljs.core.truth_(or__4223__auto__)){
@@ -126,15 +126,30 @@ return ua.includes("android");
 }
 })();
 var dims = bbss.portfolio.use_window_dimensions();
-var ratio = (cljs.core.truth_(long_QMARK_)?(function (){var x__4309__auto__ = 0.8;
+var font_size = (((cljs.core.first(dims) < (660)))?"12px":(((cljs.core.first(dims) < (780)))?"14px":"18px"
+));
+var left_distance = (((cljs.core.first(dims) < (660)))?"200px":(((cljs.core.first(dims) < (780)))?"240px":"280px"
+));
+var available_phone_width = (cljs.core.first(dims) - (((cljs.core.first(dims) < (660)))?(200):(((cljs.core.first(dims) < (780)))?(300):(450)
+)));
+var ratio = (cljs.core.truth_(is_mobile_QMARK_)?(function (){var x__4309__auto__ = (1);
 var y__4310__auto__ = (function (){var x__4306__auto__ = 0.1;
 var y__4307__auto__ = (((cljs.core.second(dims) - ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points"))?(400):(500))) / (766)) - 0.2);
 return ((x__4306__auto__ > y__4307__auto__) ? x__4306__auto__ : y__4307__auto__);
 })();
 return ((x__4309__auto__ < y__4310__auto__) ? x__4309__auto__ : y__4310__auto__);
-})():0.8);
+})():(function (){var x__4309__auto__ = 0.8;
+var y__4310__auto__ = (function (){var x__4306__auto__ = 0.1;
+var y__4307__auto__ = ((available_phone_width / (766)) - 0.2);
+return ((x__4306__auto__ > y__4307__auto__) ? x__4306__auto__ : y__4307__auto__);
+})();
+return ((x__4309__auto__ < y__4310__auto__) ? x__4309__auto__ : y__4310__auto__);
+})());
 var phone_spring = module$node_modules$$react_spring$web$dist$react_spring_web_cjs.useSpring(({"transform": (cljs.core.truth_(hovered_QMARK_)?["skew(0deg, 0deg) scale(",cljs.core.str.cljs$core$IFn$_invoke$arity$1(ratio),")"].join(''):["skew(5deg, 5deg) scale(",cljs.core.str.cljs$core$IFn$_invoke$arity$1(ratio),")"].join('')
 ), "config": module$node_modules$$react_spring$web$dist$react_spring_web_cjs.config.stiff}));
+var vec__358513 = module$node_modules$react_intersection_observer$react_intersection_observer.useInView(({"threshold": 0.1}));
+var in_view_ref = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358513,(0),null);
+var in_view_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358513,(1),null);
 module$node_modules$react$index.useEffect((function (){
 var time_changed = (function (e){
 var new_point_index = bbss.portfolio.get_point_index(bbss.portfolio.hamburger_video_points,e.target.currentTime);
@@ -158,134 +173,170 @@ return null;
 });
 }));
 
-return helix.core.get_react().createElement(helix.core.Fragment,null,helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj106906 = ({"offset":(1),"speed":0.5,"style":({"height": "40px", "zIndex": (5)})});
-return obj106906;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj106908 = ({"variant":"h1","style":({"color": "transparent", "WebkitTextStrokeWidth": "2px", "WebkitTextStrokeColor": "#929EA6"})});
-return obj106908;
-})(),"korean.tools")),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj106910 = ({"offset":0.95,"speed":2.9,"style":({"zIndex": (-1), "userSelect": "none", "pointerEvents": "none"})});
-return obj106910;
-})(),helix.core.get_react().createElement("img",(function (){var obj106912 = ({"style":(function (){var obj106914 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"left":helix.impl.props.__GT_js("20%"),"transform":helix.impl.props.__GT_js("rotate(10deg)")});
-return obj106914;
+module$node_modules$react$index.useEffect((function (){
+if(cljs.core.truth_((function (){var and__4221__auto__ = in_view_QMARK_;
+if(cljs.core.truth_(and__4221__auto__)){
+return video_ref.current;
+} else {
+return and__4221__auto__;
+}
+})())){
+return (video_ref.current.currentTime = (0));
+} else {
+return null;
+}
+}),[in_view_QMARK_]);
+
+return helix.core.get_react().createElement(helix.core.Fragment,null,helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358517 = ({"offset":(1),"speed":0.5,"style":({"height": "40px", "zIndex": (5)})});
+return obj358517;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358519 = ({"variant":"h1","style":({"color": "transparent", "WebkitTextStrokeWidth": "2px", "WebkitTextStrokeColor": "#929EA6"})});
+return obj358519;
+})(),"korean.tools")),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358521 = ({"offset":0.95,"speed":2.9,"style":({"zIndex": (-1)}),"onClick":(function (){
+return (to_page.cljs$core$IFn$_invoke$arity$1 ? to_page.cljs$core$IFn$_invoke$arity$1((1)) : to_page.call(null,(1)));
+})});
+return obj358521;
+})(),helix.core.get_react().createElement("img",(function (){var obj358523 = ({"style":(function (){var obj358525 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"left":helix.impl.props.__GT_js("20%"),"transform":helix.impl.props.__GT_js("rotate(10deg)")});
+return obj358525;
 })(),"height":"100px","src":"ktmain.png"});
-return obj106912;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj106916 = ({"offset":0.95,"speed":0.9});
-return obj106916;
-})(),helix.core.get_react().createElement("img",(function (){var obj106918 = ({"style":(function (){var obj106920 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("2px"),"left":helix.impl.props.__GT_js("5%"),"top":helix.impl.props.__GT_js("5%"),"transform":helix.impl.props.__GT_js("rotate(-10deg)")});
-return obj106920;
+return obj358523;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358527 = ({"offset":0.95,"speed":0.9,"onClick":(function (){
+return (to_page.cljs$core$IFn$_invoke$arity$1 ? to_page.cljs$core$IFn$_invoke$arity$1((1)) : to_page.call(null,(1)));
+})});
+return obj358527;
+})(),helix.core.get_react().createElement("img",(function (){var obj358529 = ({"style":(function (){var obj358531 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("2px"),"left":helix.impl.props.__GT_js("5%"),"top":helix.impl.props.__GT_js("5%"),"transform":helix.impl.props.__GT_js("rotate(-10deg)")});
+return obj358531;
 })(),"width":"200px","src":"ktstudy.png"});
-return obj106918;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj106922 = ({"offset":0.9,"speed":0.4,"style":({"zIndex": (-1), "userSelect": "none", "pointerEvents": "none"})});
-return obj106922;
-})(),helix.core.get_react().createElement("img",(function (){var obj106924 = ({"src":"clj.png","height":"50px","width":"50px","style":(function (){var obj106926 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
-return obj106926;
+return obj358529;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358533 = ({"offset":0.9,"speed":0.4,"style":({"zIndex": (-1)}),"onClick":(function (){
+return (to_page.cljs$core$IFn$_invoke$arity$1 ? to_page.cljs$core$IFn$_invoke$arity$1((1)) : to_page.call(null,(1)));
+})});
+return obj358533;
+})(),helix.core.get_react().createElement("img",(function (){var obj358535 = ({"src":"clj.png","height":"50px","width":"50px","style":(function (){var obj358537 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358537;
 })()});
-return obj106924;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj106928 = ({"offset":0.9,"speed":1.9,"style":({"zIndex": (-1), "userSelect": "none", "pointerEvents": "none"})});
-return obj106928;
-})(),helix.core.get_react().createElement("img",(function (){var obj106930 = ({"style":(function (){var obj106932 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"left":helix.impl.props.__GT_js("30%"),"top":helix.impl.props.__GT_js("5%"),"transform":helix.impl.props.__GT_js("rotate(-15deg)")});
-return obj106932;
+return obj358535;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358539 = ({"offset":0.9,"speed":1.9,"style":({"zIndex": (-1), "userSelect": "none", "pointerEvents": "none"})});
+return obj358539;
+})(),helix.core.get_react().createElement("img",(function (){var obj358541 = ({"style":(function (){var obj358543 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"left":helix.impl.props.__GT_js("30%"),"top":helix.impl.props.__GT_js("5%"),"transform":helix.impl.props.__GT_js("rotate(-15deg)")});
+return obj358543;
 })(),"src":"ktdebug.png","height":"150px"});
-return obj106930;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj106934 = ({"offset":(1),"speed":1.2,"style":({"background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)"})});
-return obj106934;
-})(),helix.core.get_react().createElement("div",(function (){var obj106936 = ({"style":(function (){var obj106938 = ({"display":helix.impl.props.__GT_js("flex"),"position":helix.impl.props.__GT_js("relative")});
-return obj106938;
+return obj358541;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358545 = ({"offset":(1),"speed":1.2,"style":({"background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)", "height": "110vh"})});
+return obj358545;
+})(),helix.core.get_react().createElement("div",(function (){var obj358547 = ({"style":(function (){var obj358549 = ({"display":helix.impl.props.__GT_js("flex"),"position":helix.impl.props.__GT_js("relative")});
+return obj358549;
+})(),"ref":in_view_ref});
+return obj358547;
+})(),helix.core.get_react().createElement("div",(function (){var obj358551 = ({"style":(function (){var obj358553 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column"),"top":helix.impl.props.__GT_js("130px"),"minWidth":helix.impl.props.__GT_js("90vw"),"position":helix.impl.props.__GT_js("relative"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358553;
 })()});
-return obj106936;
-})(),helix.core.get_react().createElement("div",(function (){var obj106940 = ({"style":(function (){var obj106942 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column"),"top":helix.impl.props.__GT_js("130px"),"position":helix.impl.props.__GT_js("relative"),"margin":helix.impl.props.__GT_js("10px")});
-return obj106942;
+return obj358551;
+})(),helix.core.get_react().createElement("p",(function (){var obj358555 = ({"style":(function (){var obj358557 = ({"display":helix.impl.props.__GT_js("inline-block"),"fontFamily":helix.impl.props.__GT_js("Rubik, sans-serif"),"fontWeight":helix.impl.props.__GT_js("800"),"fontSize":helix.impl.props.__GT_js("1rem"),"lineHeight":helix.impl.props.__GT_js(1.66),"letterSpacing":helix.impl.props.__GT_js("0.03333em"),"color":helix.impl.props.__GT_js("rgba(255,255,255,0.8)")});
+return obj358557;
 })()});
-return obj106940;
-})(),helix.core.get_react().createElement("p",(function (){var obj106944 = ({"style":(function (){var obj106946 = ({"display":helix.impl.props.__GT_js("inline-block"),"fontFamily":helix.impl.props.__GT_js("Rubik, sans-serif"),"fontWeight":helix.impl.props.__GT_js("800"),"fontSize":helix.impl.props.__GT_js("1rem"),"lineHeight":helix.impl.props.__GT_js(1.66),"letterSpacing":helix.impl.props.__GT_js("0.03333em"),"color":helix.impl.props.__GT_js("rgba(255,255,255,0.8)")});
-return obj106946;
+return obj358555;
+})(),"A ",helix.core.get_react().createElement("em",({}),"work in progress")," that I've been using to help me study Korean."),helix.core.get_react().createElement("p",(function (){var obj358561 = ({"style":(function (){var obj358563 = ({"display":helix.impl.props.__GT_js("inline-block"),"fontFamily":helix.impl.props.__GT_js("Rubik, sans-serif"),"fontWeight":helix.impl.props.__GT_js("800"),"fontSize":helix.impl.props.__GT_js("1rem"),"lineHeight":helix.impl.props.__GT_js(1.66),"letterSpacing":helix.impl.props.__GT_js("0.03333em"),"color":helix.impl.props.__GT_js("rgba(255,255,255,0.8)")});
+return obj358563;
 })()});
-return obj106944;
-})(),"A ",helix.core.get_react().createElement("em",({}),"work in progress")," that I've been using to help me study Korean."),helix.core.get_react().createElement("p",(function (){var obj106950 = ({"style":(function (){var obj106952 = ({"display":helix.impl.props.__GT_js("inline-block"),"fontFamily":helix.impl.props.__GT_js("Rubik, sans-serif"),"fontWeight":helix.impl.props.__GT_js("800"),"fontSize":helix.impl.props.__GT_js("1rem"),"lineHeight":helix.impl.props.__GT_js(1.66),"letterSpacing":helix.impl.props.__GT_js("0.03333em"),"color":helix.impl.props.__GT_js("rgba(255,255,255,0.8)")});
-return obj106952;
-})()});
-return obj106950;
-})(),"I started turning it into an app because I think others might like the tool!"),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Paper,(function (){var obj106954 = ({"style":({"marginTop": "50px", "minHeight": "80px", "background": "linear-gradient(white 60%, transparent 100%)"}),"elevation":(3)});
-return obj106954;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tabs,(function (){var obj106956 = ({"value":selected_tab,"onChange":(function (_,e2){
+return obj358561;
+})(),"I started turning it into an app because I think others might like the tool!"),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Paper,(function (){var obj358565 = ({"style":({"marginTop": "50px", "minHeight": "80px", "background": "linear-gradient(white 60%, transparent 100%)"}),"elevation":(3)});
+return obj358565;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tabs,(function (){var obj358567 = ({"value":selected_tab,"onChange":(function (_,e2){
 return (set_selected_tab.cljs$core$IFn$_invoke$arity$1 ? set_selected_tab.cljs$core$IFn$_invoke$arity$1(e2) : set_selected_tab.call(null,e2));
 })});
-return obj106956;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj106958 = ({"value":"points","label":"Highlights"});
-return obj106958;
-})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj106960 = ({"value":"tt","label":"Technical Tidbits"});
-return obj106960;
-})())),helix.core.get_react().createElement("div",(function (){var obj106962 = ({"style":(function (){var obj106964 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("row"),"marginTop":helix.impl.props.__GT_js("20px"),"position":helix.impl.props.__GT_js("relative"),"left":helix.impl.props.__GT_js("20px")});
-return obj106964;
+return obj358567;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj358569 = ({"value":"points","label":"Highlights"});
+return obj358569;
+})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj358571 = ({"value":"tt","label":"Technical Tidbits"});
+return obj358571;
+})()),helix.core.get_react().createElement("img",(function (){var obj358573 = ({"src":"clj.png","title":"Clojure","alt":"Clojure","height":"30px","width":"30px","style":(function (){var obj358575 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358575;
 })()});
-return obj106962;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj106966 = ({"direction":"right","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points")});
-return obj106966;
-})(),helix.core.get_react().createElement("div",(function (){var obj106968 = ({"style":(function (){var obj106970 = ({"position":helix.impl.props.__GT_js("absolute")});
-return obj106970;
+return obj358573;
+})()),helix.core.get_react().createElement("img",(function (){var obj358577 = ({"src":"cljs-white.svg","alt":"ClojureScript","title":"ClojureScript","height":"30px","width":"30px","style":(function (){var obj358579 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358579;
+})()});
+return obj358577;
+})()),helix.core.get_react().createElement("img",(function (){var obj358581 = ({"src":"xtdb.svg","alt":"xtdb","title":"xtdb","height":"30px","style":(function (){var obj358583 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358583;
+})()});
+return obj358581;
+})()),helix.core.get_react().createElement("img",(function (){var obj358585 = ({"src":"fulcro.svg","alt":"fulcro","title":"fulcro","height":"30px","width":"30px","style":(function (){var obj358587 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358587;
+})()});
+return obj358585;
+})())),helix.core.get_react().createElement("div",(function (){var obj358589 = ({"style":(function (){var obj358591 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("row"),"marginTop":helix.impl.props.__GT_js("20px"),"position":helix.impl.props.__GT_js("relative"),"left":helix.impl.props.__GT_js("20px")});
+return obj358591;
+})()});
+return obj358589;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj358593 = ({"direction":"right","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points")});
+return obj358593;
+})(),helix.core.get_react().createElement("div",(function (){var obj358595 = ({"style":(function (){var obj358597 = ({"position":helix.impl.props.__GT_js("absolute"),"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js((cljs.core.truth_(is_mobile_QMARK_)?"row":"column"))});
+return obj358597;
 })(),"elevation":(3)});
-return obj106968;
-})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__106971){
-var vec__106972 = p__106971;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106972,(0),null);
-var map__106975 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106972,(1),null);
-var map__106975__$1 = cljs.core.__destructure_map(map__106975);
-var point = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__106975__$1,new cljs.core.Keyword(null,"point","point",1813198264));
-var starts_at = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__106975__$1,new cljs.core.Keyword(null,"starts-at","starts-at",-624383465));
-return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Button,(function (){var obj106977 = ({"key":index,"variant":"outlined","style":({"transform": ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(index,highlighted_point))?"scale(1)":"scale(0.8)"), "transition": "200ms linear"}),"onClick":(function (){
+return obj358595;
+})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__358598){
+var vec__358599 = p__358598;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358599,(0),null);
+var map__358602 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358599,(1),null);
+var map__358602__$1 = cljs.core.__destructure_map(map__358602);
+var point = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358602__$1,new cljs.core.Keyword(null,"point","point",1813198264));
+var starts_at = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358602__$1,new cljs.core.Keyword(null,"starts-at","starts-at",-624383465));
+return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Button,(function (){var obj358604 = ({"key":index,"variant":"outlined","style":({"transform": ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(index,highlighted_point))?"scale(1)":"scale(0.8)"), "transition": "200ms linear"}),"onClick":(function (){
 return (video_ref.current.currentTime = starts_at);
 })});
-return obj106977;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj106979 = ({"variant":"h6","color":((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(index,highlighted_point))?"secondary":"primary")});
-return obj106979;
+return obj358604;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358606 = ({"variant":"h6","style":({"fontSize": font_size}),"color":((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(index,highlighted_point))?"secondary":"primary")});
+return obj358606;
 })(),point));
-}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.hamburger_video_points)))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj106981 = ({"direction":"left","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"tt")});
-return obj106981;
-})(),helix.core.get_react().createElement("div",(function (){var obj106983 = ({"style":(function (){var obj106985 = ({"position":helix.impl.props.__GT_js("absolute")});
-return obj106985;
+}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.hamburger_video_points)))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj358608 = ({"direction":"left","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"tt")});
+return obj358608;
+})(),helix.core.get_react().createElement("div",(function (){var obj358610 = ({"style":(function (){var obj358612 = ({"position":helix.impl.props.__GT_js("absolute")});
+return obj358612;
 })()});
-return obj106983;
-})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__106986){
-var vec__106987 = p__106986;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106987,(0),null);
-var map__106990 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__106987,(1),null);
-var map__106990__$1 = cljs.core.__destructure_map(map__106990);
-var tidbit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__106990__$1,new cljs.core.Keyword(null,"tidbit","tidbit",1352532847));
-return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj106992 = ({"key":index,"variant":"h6","color":"primary"});
-return obj106992;
+return obj358610;
+})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__358613){
+var vec__358614 = p__358613;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358614,(0),null);
+var map__358617 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358614,(1),null);
+var map__358617__$1 = cljs.core.__destructure_map(map__358617);
+var tidbit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358617__$1,new cljs.core.Keyword(null,"tidbit","tidbit",1352532847));
+return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358619 = ({"key":index,"variant":"h6","color":"primary"});
+return obj358619;
 })(),tidbit);
-}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.korean_tools_tt)))))))),helix.core.get_react().createElement(module$node_modules$$react_spring$web$dist$react_spring_web_cjs.animated.div,(function (){var obj106994 = ({"onMouseOver":(function (){
+}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.korean_tools_tt)))))))),helix.core.get_react().createElement(module$node_modules$$react_spring$web$dist$react_spring_web_cjs.animated.div,(function (){var obj358621 = ({"onMouseOver":(function (){
 return (set_hovered_BANG_.cljs$core$IFn$_invoke$arity$1 ? set_hovered_BANG_.cljs$core$IFn$_invoke$arity$1(true) : set_hovered_BANG_.call(null,true));
 }),"onMouseOut":(function (){
 return (set_hovered_BANG_.cljs$core$IFn$_invoke$arity$1 ? set_hovered_BANG_.cljs$core$IFn$_invoke$arity$1(false) : set_hovered_BANG_.call(null,false));
-}),"style":(cljs.core.truth_(is_mobile_QMARK_)?({"transform": phone_spring.transform, "borderRadius": "40px", "top": ["calc(",cljs.core.str.cljs$core$IFn$_invoke$arity$1(((cljs.core.second(dims) / (2)) + ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points"))?(180):(240)))),"px - 383px)"].join(''), "width": "375px", "zIndex": (5), "position": "absolute", "boxShadow": "0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111", "height": "812px", "left": ["calc(",cljs.core.str.cljs$core$IFn$_invoke$arity$1((cljs.core.first(dims) / (2))),"px - ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((200)),"px)"].join(''), "margin": "40px auto"}):({"transform": phone_spring.transform, "borderRadius": "40px", "top": "-220px", "width": "375px", "position": "relative", "boxShadow": "0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111", "height": "812px", "left": "330px", "margin": "40px auto"}))});
-return obj106994;
-})(),helix.core.get_react().createElement("video",(function (){var obj106996 = ({"autoPlay":true,"ref":video_ref,"muted":true,"loop":true,"playsInline":true,"id":"kt","style":(function (){var obj106998 = ({"borderRadius":helix.impl.props.__GT_js("30px"),"zIndex":helix.impl.props.__GT_js((20))});
-return obj106998;
+}),"style":(cljs.core.truth_(is_mobile_QMARK_)?({"transform": phone_spring.transform, "borderRadius": "40px", "top": ["calc(",cljs.core.str.cljs$core$IFn$_invoke$arity$1(((cljs.core.second(dims) / (2)) + ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points"))?(180):(240)))),"px - 383px)"].join(''), "width": "375px", "zIndex": (5), "position": "absolute", "boxShadow": "0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111", "height": "812px", "left": ["calc(",cljs.core.str.cljs$core$IFn$_invoke$arity$1((cljs.core.first(dims) / (2))),"px - ",cljs.core.str.cljs$core$IFn$_invoke$arity$1((200)),"px)"].join(''), "margin": "40px auto"}):({"transform": phone_spring.transform, "borderRadius": "40px", "top": "-280px", "width": "375px", "position": "relative", "boxShadow": "0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111", "height": "812px", "left": left_distance, "margin": "40px auto"}))});
+return obj358621;
+})(),helix.core.get_react().createElement("video",(function (){var obj358623 = ({"autoPlay":true,"ref":video_ref,"muted":true,"loop":true,"playsInline":true,"id":"kt","style":(function (){var obj358625 = ({"borderRadius":helix.impl.props.__GT_js("30px"),"zIndex":helix.impl.props.__GT_js((20))});
+return obj358625;
 })()});
-return obj106996;
-})(),helix.core.get_react().createElement("source",(function (){var obj107000 = ({"src":"kt-hamburger.webm","type":"video/webm;codecs=\"vp8, vorbis\""});
-return obj107000;
-})()),helix.core.get_react().createElement("source",(function (){var obj107002 = ({"src":"kt-hamburger.mov","type":"video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\""});
-return obj107002;
-})()))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.ButtonBase,(function (){var obj107004 = ({"style":({"position": "absolute", "bottom": "10px", "left": "10px"}),"onClick":(function (){
+return obj358623;
+})(),helix.core.get_react().createElement("source",(function (){var obj358627 = ({"src":"kt-hamburger.webm","type":"video/webm;codecs=\"vp8, vorbis\""});
+return obj358627;
+})()),helix.core.get_react().createElement("source",(function (){var obj358629 = ({"src":"kt-hamburger.mov","type":"video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\""});
+return obj358629;
+})()))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.ButtonBase,(function (){var obj358631 = ({"style":({"minHeight": "10vh", "position": "absolute", "padding": "10px", "paddingRight": "40px", "bottom": (cljs.core.truth_(is_mobile_QMARK_)?"20vh":"10vh"), "left": "10px"}),"onClick":(function (){
 return (to_page.cljs$core$IFn$_invoke$arity$1 ? to_page.cljs$core$IFn$_invoke$arity$1((2)) : to_page.call(null,(2)));
 })});
-return obj107004;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107006 = ({"variant":"caption","style":({"fontWeight": "800", "color": "rgba(255,255,255,0.8)", "fontSize": "20px"})});
-return obj107006;
-})(),"AIRCRAFT-NOISE.ORG"),helix.core.get_react().createElement("span",(function (){var obj107008 = ({"style":(function (){var obj107010 = ({"position":helix.impl.props.__GT_js("absolute"),"left":helix.impl.props.__GT_js("230px")});
-return obj107010;
+return obj358631;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358633 = ({"variant":"caption","style":({"fontWeight": "800", "color": "rgba(255,255,255,0.8)", "fontSize": "20px"})});
+return obj358633;
+})(),"AIRCRAFT-NOISE.ORG"),helix.core.get_react().createElement("span",(function (){var obj358635 = ({"style":(function (){var obj358637 = ({"position":helix.impl.props.__GT_js("absolute"),"left":helix.impl.props.__GT_js("230px")});
+return obj358637;
 })()});
-return obj107008;
+return obj358635;
 })(),helix.core.get_react().createElement(bbss.portfolio.arrow_down,null)))));
 });
 if(goog.DEBUG === true){
-var G__107011 = G__106891;
-goog.object.set(G__107011,"displayName","bbss.portfolio/KoreanTools");
+var G__358638 = G__358499;
+goog.object.set(G__358638,"displayName","bbss.portfolio/KoreanTools");
 
-return G__107011;
+return G__358638;
 } else {
-return G__106891;
+return G__358499;
 }
 })();
 
@@ -294,25 +345,38 @@ return G__106891;
 bbss.portfolio.aircraft_noise_points = new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"3D exploration of flight data",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(0)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Client-side data processing",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(12)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Different types of visualization",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(25)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Live flight streaming",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(72)], null)], null);
 bbss.portfolio.aircraft_noise_tt = new cljs.core.PersistentVector(null, 6, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Making use of the great vis.gl GIS tool suite."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Worked with Uber vis.gl team to squeeze out performance."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Using WebWorkers for data fetching & processing."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Keeping UI thread as yank-free as possible."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Use WebSockets and defined TypedArray layouts for optimal data transfer and display."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Use kafka for backfilling real-time flights."], null)], null);
 
-bbss.portfolio.AircraftNoise = (function (){var G__107014 = (function bbss$portfolio$AircraftNoise(props__48880__auto__,maybe_ref__48881__auto__){
-var vec__107015 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__48880__auto__),maybe_ref__48881__auto__], null);
-var map__107018 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107015,(0),null);
-var map__107018__$1 = cljs.core.__destructure_map(map__107018);
-var to_page = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107018__$1,new cljs.core.Keyword(null,"to-page","to-page",-1069954033));
+bbss.portfolio.AircraftNoise = (function (){var G__358641 = (function bbss$portfolio$AircraftNoise(props__66614__auto__,maybe_ref__66615__auto__){
+var vec__358642 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__66614__auto__),maybe_ref__66615__auto__], null);
+var map__358645 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358642,(0),null);
+var map__358645__$1 = cljs.core.__destructure_map(map__358645);
+var to_page = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358645__$1,new cljs.core.Keyword(null,"to-page","to-page",-1069954033));
 
 var video_ref = module$node_modules$react$index.useRef();
-var vec__107019 = module$node_modules$react$index.useState((0));
-var highlighted_point = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107019,(0),null);
-var set_point = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107019,(1),null);
-var vec__107022 = module$node_modules$react$index.useState(false);
-var hovered_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107022,(0),null);
-var set_hovered_BANG_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107022,(1),null);
-var vec__107025 = module$node_modules$react$index.useState("points");
-var selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107025,(0),null);
-var set_selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107025,(1),null);
-var vec__107028 = bbss.portfolio.use_window_dimensions();
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107028,(0),null);
-var window_height = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107028,(1),null);
+var vec__358646 = module$node_modules$react$index.useState((0));
+var highlighted_point = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358646,(0),null);
+var set_point = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358646,(1),null);
+var vec__358649 = module$node_modules$react$index.useState(false);
+var hovered_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358649,(0),null);
+var set_hovered_BANG_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358649,(1),null);
+var vec__358652 = module$node_modules$react$index.useState("points");
+var selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358652,(0),null);
+var set_selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358652,(1),null);
+var is_mobile_QMARK_ = (function (){var ua = navigator.userAgent.toLowerCase();
+var or__4223__auto__ = ua.includes("ipad");
+if(cljs.core.truth_(or__4223__auto__)){
+return or__4223__auto__;
+} else {
+var or__4223__auto____$1 = ua.includes("ios");
+if(cljs.core.truth_(or__4223__auto____$1)){
+return or__4223__auto____$1;
+} else {
+return ua.includes("android");
+}
+}
+})();
+var vec__358655 = bbss.portfolio.use_window_dimensions();
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358655,(0),null);
+var window_height = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358655,(1),null);
 var ratio = (function (){var x__4309__auto__ = 0.8;
 var y__4310__auto__ = (function (){var x__4306__auto__ = 0.1;
 var y__4307__auto__ = (((window_height - ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points"))?(400):(500))) / (766)) - 0.1);
@@ -321,6 +385,9 @@ return ((x__4306__auto__ > y__4307__auto__) ? x__4306__auto__ : y__4307__auto__)
 return ((x__4309__auto__ < y__4310__auto__) ? x__4309__auto__ : y__4310__auto__);
 })();
 var tablet_spring = module$node_modules$$react_spring$web$dist$react_spring_web_cjs.useSpring(({"transform": (cljs.core.truth_(hovered_QMARK_)?["skew(0deg, 0deg) scale(",cljs.core.str.cljs$core$IFn$_invoke$arity$1(ratio),")"].join(''):["skew(5deg, 5deg) scale(",cljs.core.str.cljs$core$IFn$_invoke$arity$1(ratio),")"].join('')), "config": module$node_modules$$react_spring$web$dist$react_spring_web_cjs.config.stiff}));
+var vec__358658 = module$node_modules$react_intersection_observer$react_intersection_observer.useInView(({"threshold": 0.5}));
+var in_view_ref = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358658,(0),null);
+var in_view_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358658,(1),null);
 module$node_modules$react$index.useEffect((function (){
 var time_changed = (function (e){
 var new_point_index = bbss.portfolio.get_point_index(bbss.portfolio.aircraft_noise_points,e.target.currentTime);
@@ -344,122 +411,152 @@ return null;
 });
 }));
 
-return helix.core.get_react().createElement(helix.core.Fragment,null,helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107032 = ({"offset":(2),"speed":0.5,"style":({"height": "115px", "zIndex": (7), "overflow": "hidden"})});
-return obj107032;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107034 = ({"variant":"h1","style":({"color": "transparent", "zIndex": (6), "WebkitTextStrokeWidth": "2px", "WebkitTextStrokeColor": "#929EA6"})});
-return obj107034;
-})(),"aircraft-noise.org")),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107036 = ({"offset":1.96,"speed":0.5,"style":({"zIndex": (-1), "userSelect": "none", "pointerEvents": "none"})});
-return obj107036;
-})(),helix.core.get_react().createElement("img",(function (){var obj107038 = ({"style":(function (){var obj107040 = ({"position":helix.impl.props.__GT_js("absolute"),"left":helix.impl.props.__GT_js("70%"),"zIndex":helix.impl.props.__GT_js((-1)),"top":helix.impl.props.__GT_js("300px"),"userSelect":helix.impl.props.__GT_js("none"),"pointerEvents":helix.impl.props.__GT_js("none"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("rotate(-10deg)")});
-return obj107040;
+module$node_modules$react$index.useEffect((function (){
+if(cljs.core.truth_((function (){var and__4221__auto__ = in_view_QMARK_;
+if(cljs.core.truth_(and__4221__auto__)){
+return video_ref.current;
+} else {
+return and__4221__auto__;
+}
+})())){
+return (video_ref.current.currentTime = (0));
+} else {
+return null;
+}
+}),[in_view_QMARK_]);
+
+return helix.core.get_react().createElement(helix.core.Fragment,null,helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358662 = ({"offset":(2),"speed":0.5,"style":({"height": "115px", "zIndex": (7), "overflow": "hidden"})});
+return obj358662;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358664 = ({"variant":"h1","style":({"color": "transparent", "zIndex": (6), "WebkitTextStrokeWidth": "2px", "WebkitTextStrokeColor": "#929EA6"})});
+return obj358664;
+})(),"aircraft-noise.org")),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358666 = ({"offset":1.96,"speed":0.5,"style":({"zIndex": (-1), "userSelect": "none", "pointerEvents": "none"})});
+return obj358666;
+})(),helix.core.get_react().createElement("img",(function (){var obj358668 = ({"style":(function (){var obj358670 = ({"position":helix.impl.props.__GT_js("absolute"),"left":helix.impl.props.__GT_js("70%"),"zIndex":helix.impl.props.__GT_js((-1)),"top":helix.impl.props.__GT_js("300px"),"userSelect":helix.impl.props.__GT_js("none"),"pointerEvents":helix.impl.props.__GT_js("none"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("rotate(-10deg)")});
+return obj358670;
 })(),"height":"250px","src":"acnsf.png"});
-return obj107038;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107042 = ({"offset":1.96,"speed":0.4,"style":({"zIndex": (-1), "userSelect": "none", "pointerEvents": "none"})});
-return obj107042;
-})(),helix.core.get_react().createElement("img",(function (){var obj107044 = ({"style":(function (){var obj107046 = ({"position":helix.impl.props.__GT_js("absolute"),"left":helix.impl.props.__GT_js("40%"),"top":helix.impl.props.__GT_js("300px"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("rotate(5deg)")});
-return obj107046;
+return obj358668;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358672 = ({"offset":1.96,"speed":0.4,"style":({"zIndex": (-1), "userSelect": "none", "pointerEvents": "none"})});
+return obj358672;
+})(),helix.core.get_react().createElement("img",(function (){var obj358674 = ({"style":(function (){var obj358676 = ({"position":helix.impl.props.__GT_js("absolute"),"left":helix.impl.props.__GT_js("40%"),"top":helix.impl.props.__GT_js("300px"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("rotate(5deg)")});
+return obj358676;
 })(),"height":"250px","src":"acnheatmap.png"});
-return obj107044;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107048 = ({"offset":1.96,"speed":0.2,"style":({"zIndex": (-1), "userSelect": "none", "pointerEvents": "none"})});
-return obj107048;
-})(),helix.core.get_react().createElement("img",(function (){var obj107050 = ({"style":(function (){var obj107052 = ({"position":helix.impl.props.__GT_js("absolute"),"top":helix.impl.props.__GT_js("300px"),"borderRadius":helix.impl.props.__GT_js("20px"),"left":helix.impl.props.__GT_js("10%"),"transform":helix.impl.props.__GT_js("rotate(-5deg)")});
-return obj107052;
+return obj358674;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358678 = ({"offset":1.96,"speed":0.2,"style":({"zIndex": (-1), "userSelect": "none", "pointerEvents": "none"})});
+return obj358678;
+})(),helix.core.get_react().createElement("img",(function (){var obj358680 = ({"style":(function (){var obj358682 = ({"position":helix.impl.props.__GT_js("absolute"),"top":helix.impl.props.__GT_js("300px"),"borderRadius":helix.impl.props.__GT_js("20px"),"left":helix.impl.props.__GT_js("10%"),"transform":helix.impl.props.__GT_js("rotate(-5deg)")});
+return obj358682;
 })(),"height":"250px","src":"acnterrain.png"});
-return obj107050;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107054 = ({"offset":(2),"speed":(1),"style":({"background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)", "zIndex": (5)})});
-return obj107054;
-})(),helix.core.get_react().createElement("div",(function (){var obj107056 = ({"style":(function (){var obj107058 = ({"display":helix.impl.props.__GT_js("flex"),"position":helix.impl.props.__GT_js("relative"),"justifyContent":helix.impl.props.__GT_js("center")});
-return obj107058;
+return obj358680;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358684 = ({"offset":(2),"speed":(1),"style":({"background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)", "height": "110vh", "zIndex": (5)})});
+return obj358684;
+})(),helix.core.get_react().createElement("div",(function (){var obj358686 = ({"style":(function (){var obj358688 = ({"display":helix.impl.props.__GT_js("flex"),"position":helix.impl.props.__GT_js("relative"),"justifyContent":helix.impl.props.__GT_js("center")});
+return obj358688;
+})(),"ref":in_view_ref});
+return obj358686;
+})(),helix.core.get_react().createElement("div",(function (){var obj358690 = ({"style":(function (){var obj358692 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column"),"top":helix.impl.props.__GT_js("130px"),"position":helix.impl.props.__GT_js("relative"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358692;
 })()});
-return obj107056;
-})(),helix.core.get_react().createElement("div",(function (){var obj107060 = ({"style":(function (){var obj107062 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column"),"top":helix.impl.props.__GT_js("130px"),"position":helix.impl.props.__GT_js("relative"),"margin":helix.impl.props.__GT_js("10px")});
-return obj107062;
-})()});
-return obj107060;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107064 = ({"variant":"body1","style":({"color": "lightgray"})});
-return obj107064;
-})(),"Supporting researchers in visualizing models of aircraft noise pollution. Building visualizations and supporting tools."),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Paper,(function (){var obj107066 = ({"style":({"marginTop": "50px", "minHeight": "80px", "background": "linear-gradient(white 60%, transparent 100%)"})});
-return obj107066;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tabs,(function (){var obj107068 = ({"value":selected_tab,"onChange":(function (___$1,e2){
+return obj358690;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358694 = ({"variant":"body1","style":({"color": "lightgray"})});
+return obj358694;
+})(),"Supporting researchers in visualizing models of aircraft noise pollution. Building visualizations and supporting tools."),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Paper,(function (){var obj358696 = ({"style":({"marginTop": "50px", "minHeight": "80px", "background": "linear-gradient(white 60%, transparent 100%)"})});
+return obj358696;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tabs,(function (){var obj358698 = ({"value":selected_tab,"onChange":(function (___$1,e2){
 return (set_selected_tab.cljs$core$IFn$_invoke$arity$1 ? set_selected_tab.cljs$core$IFn$_invoke$arity$1(e2) : set_selected_tab.call(null,e2));
 })});
-return obj107068;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj107070 = ({"value":"points","label":"Highlights"});
-return obj107070;
-})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj107072 = ({"value":"tt","label":"Technical Tidbits"});
-return obj107072;
-})())),helix.core.get_react().createElement("div",(function (){var obj107074 = ({"style":(function (){var obj107076 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("row"),"marginTop":helix.impl.props.__GT_js("20px"),"position":helix.impl.props.__GT_js("relative"),"left":helix.impl.props.__GT_js("20px")});
-return obj107076;
+return obj358698;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj358700 = ({"value":"points","label":"Highlights"});
+return obj358700;
+})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj358702 = ({"value":"tt","label":"Technical Tidbits"});
+return obj358702;
+})()),helix.core.get_react().createElement("img",(function (){var obj358704 = ({"src":"clj.png","title":"Clojure","alt":"Clojure","height":"30px","width":"30px","style":(function (){var obj358706 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358706;
 })()});
-return obj107074;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj107078 = ({"direction":"right","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points")});
-return obj107078;
-})(),helix.core.get_react().createElement("div",(function (){var obj107080 = ({"style":(function (){var obj107082 = ({"position":helix.impl.props.__GT_js("absolute"),"display":helix.impl.props.__GT_js("flex")});
-return obj107082;
+return obj358704;
+})()),helix.core.get_react().createElement("img",(function (){var obj358708 = ({"src":"cljs-white.svg","alt":"ClojureScript","title":"ClojureScript","height":"30px","width":"30px","style":(function (){var obj358710 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358710;
 })()});
-return obj107080;
-})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__107083){
-var vec__107084 = p__107083;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107084,(0),null);
-var map__107087 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107084,(1),null);
-var map__107087__$1 = cljs.core.__destructure_map(map__107087);
-var point = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107087__$1,new cljs.core.Keyword(null,"point","point",1813198264));
-var starts_at = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107087__$1,new cljs.core.Keyword(null,"starts-at","starts-at",-624383465));
-return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Button,(function (){var obj107089 = ({"key":index,"variant":"outlined","style":({"transform": ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(index,highlighted_point))?"scale(1)":"scale(0.8)"), "transition": "200ms linear"}),"onClick":(function (){
+return obj358708;
+})()),helix.core.get_react().createElement("img",(function (){var obj358712 = ({"src":"postgres.svg","alt":"postgres","title":"postgres","height":"30px","width":"30px","style":(function (){var obj358714 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358714;
+})()});
+return obj358712;
+})()),helix.core.get_react().createElement("img",(function (){var obj358716 = ({"src":"kafka.svg","alt":"kafka","title":"kafka","height":"30px","style":(function (){var obj358718 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358718;
+})()});
+return obj358716;
+})())),helix.core.get_react().createElement("div",(function (){var obj358720 = ({"style":(function (){var obj358722 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("row"),"marginTop":helix.impl.props.__GT_js("20px"),"position":helix.impl.props.__GT_js("relative"),"left":helix.impl.props.__GT_js("20px")});
+return obj358722;
+})()});
+return obj358720;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj358724 = ({"direction":"right","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points")});
+return obj358724;
+})(),helix.core.get_react().createElement("div",(function (){var obj358726 = ({"style":(function (){var obj358728 = ({"position":helix.impl.props.__GT_js("absolute"),"display":helix.impl.props.__GT_js("flex")});
+return obj358728;
+})()});
+return obj358726;
+})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__358729){
+var vec__358730 = p__358729;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358730,(0),null);
+var map__358733 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358730,(1),null);
+var map__358733__$1 = cljs.core.__destructure_map(map__358733);
+var point = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358733__$1,new cljs.core.Keyword(null,"point","point",1813198264));
+var starts_at = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358733__$1,new cljs.core.Keyword(null,"starts-at","starts-at",-624383465));
+return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Button,(function (){var obj358735 = ({"key":index,"variant":"outlined","style":({"transform": ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(index,highlighted_point))?"scale(1)":"scale(0.8)"), "transition": "200ms linear"}),"onClick":(function (){
 return (video_ref.current.currentTime = starts_at);
 })});
-return obj107089;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107091 = ({"variant":"h6","color":((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(index,highlighted_point))?"secondary":"primary")});
-return obj107091;
+return obj358735;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358737 = ({"variant":"h6","color":((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(index,highlighted_point))?"secondary":"primary")});
+return obj358737;
 })(),point));
-}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.aircraft_noise_points)))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj107093 = ({"direction":"left","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"tt")});
-return obj107093;
-})(),helix.core.get_react().createElement("div",(function (){var obj107095 = ({"style":(function (){var obj107097 = ({"position":helix.impl.props.__GT_js("absolute")});
-return obj107097;
+}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.aircraft_noise_points)))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj358739 = ({"direction":"left","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"tt")});
+return obj358739;
+})(),helix.core.get_react().createElement("div",(function (){var obj358741 = ({"style":(function (){var obj358743 = ({"position":helix.impl.props.__GT_js("absolute")});
+return obj358743;
 })()});
-return obj107095;
-})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__107098){
-var vec__107099 = p__107098;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107099,(0),null);
-var map__107102 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107099,(1),null);
-var map__107102__$1 = cljs.core.__destructure_map(map__107102);
-var tidbit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107102__$1,new cljs.core.Keyword(null,"tidbit","tidbit",1352532847));
-return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107104 = ({"key":index,"variant":"h6","color":"primary"});
-return obj107104;
+return obj358741;
+})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__358744){
+var vec__358745 = p__358744;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358745,(0),null);
+var map__358748 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358745,(1),null);
+var map__358748__$1 = cljs.core.__destructure_map(map__358748);
+var tidbit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358748__$1,new cljs.core.Keyword(null,"tidbit","tidbit",1352532847));
+return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358750 = ({"key":index,"variant":"h6","color":"primary"});
+return obj358750;
 })(),tidbit);
-}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.aircraft_noise_tt))))))),helix.core.get_react().createElement(module$node_modules$$react_spring$web$dist$react_spring_web_cjs.animated.div,(function (){var obj107106 = ({"onMouseOver":(function (){
+}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.aircraft_noise_tt))))))),helix.core.get_react().createElement(module$node_modules$$react_spring$web$dist$react_spring_web_cjs.animated.div,(function (){var obj358752 = ({"onMouseOver":(function (){
 return (set_hovered_BANG_.cljs$core$IFn$_invoke$arity$1 ? set_hovered_BANG_.cljs$core$IFn$_invoke$arity$1(true) : set_hovered_BANG_.call(null,true));
 }),"onMouseOut":(function (){
 return (set_hovered_BANG_.cljs$core$IFn$_invoke$arity$1 ? set_hovered_BANG_.cljs$core$IFn$_invoke$arity$1(false) : set_hovered_BANG_.call(null,false));
 }),"style":({"transform": tablet_spring.transform, "borderRadius": "40px", "top": ["calc(",cljs.core.str.cljs$core$IFn$_invoke$arity$1(((window_height / (2)) + ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points"))?(180):(240)))),"px - 383px)"].join(''), "width": "1000px", "zIndex": (5), "position": "absolute", "boxShadow": "0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111", "height": "766px", "left": "calc(50% - 500px)", "margin": "40px auto"})});
-return obj107106;
-})(),helix.core.get_react().createElement("video",(function (){var obj107108 = ({"autoPlay":true,"muted":true,"loop":true,"playsInline":true,"ref":video_ref,"style":(function (){var obj107110 = ({"width":helix.impl.props.__GT_js("1000px"),"height":helix.impl.props.__GT_js("766px"),"zIndex":helix.impl.props.__GT_js((6)),"borderRadius":helix.impl.props.__GT_js("40px")});
-return obj107110;
+return obj358752;
+})(),helix.core.get_react().createElement("video",(function (){var obj358754 = ({"autoPlay":true,"muted":true,"loop":true,"playsInline":true,"ref":video_ref,"style":(function (){var obj358756 = ({"width":helix.impl.props.__GT_js("1000px"),"height":helix.impl.props.__GT_js("766px"),"zIndex":helix.impl.props.__GT_js((6)),"borderRadius":helix.impl.props.__GT_js("40px")});
+return obj358756;
 })()});
-return obj107108;
-})(),helix.core.get_react().createElement("source",(function (){var obj107112 = ({"src":"acn.mp4","type":"video/webm;codecs=\"vp8, vorbis\""});
-return obj107112;
-})()),helix.core.get_react().createElement("source",(function (){var obj107114 = ({"src":"acn.mov","type":"video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\""});
-return obj107114;
-})())))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.ButtonBase,(function (){var obj107116 = ({"style":({"position": "absolute", "left": "10px", "bottom": "20px", "zIndex": (10)}),"onClick":(function (){
+return obj358754;
+})(),helix.core.get_react().createElement("source",(function (){var obj358758 = ({"src":"acn.mp4","type":"video/webm;codecs=\"vp8, vorbis\""});
+return obj358758;
+})()),helix.core.get_react().createElement("source",(function (){var obj358760 = ({"src":"acn.mov","type":"video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\""});
+return obj358760;
+})())))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.ButtonBase,(function (){var obj358762 = ({"style":({"minHeight": "10vh", "position": "absolute", "padding": "10px", "paddingRight": "40px", "bottom": (cljs.core.truth_(is_mobile_QMARK_)?"20vh":"10vh"), "left": "10px", "zIndex": (10)}),"onClick":(function (){
 return (to_page.cljs$core$IFn$_invoke$arity$1 ? to_page.cljs$core$IFn$_invoke$arity$1((3)) : to_page.call(null,(3)));
 })});
-return obj107116;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107118 = ({"variant":"caption","style":({"fontWeight": "800", "color": "rgba(255,255,255,0.8)", "fontSize": "20px"})});
-return obj107118;
-})(),"CLJSC2"),helix.core.get_react().createElement("span",(function (){var obj107120 = ({"style":(function (){var obj107122 = ({"position":helix.impl.props.__GT_js("absolute"),"left":helix.impl.props.__GT_js("80px")});
-return obj107122;
+return obj358762;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358764 = ({"variant":"caption","style":({"fontWeight": "800", "color": "rgba(255,255,255,0.8)", "fontSize": "20px"})});
+return obj358764;
+})(),"CLJSC2"),helix.core.get_react().createElement("span",(function (){var obj358766 = ({"style":(function (){var obj358768 = ({"position":helix.impl.props.__GT_js("absolute"),"left":helix.impl.props.__GT_js("100px")});
+return obj358768;
 })()});
-return obj107120;
+return obj358766;
 })(),helix.core.get_react().createElement(bbss.portfolio.arrow_down,null)))));
 });
 if(goog.DEBUG === true){
-var G__107123 = G__107014;
-goog.object.set(G__107123,"displayName","bbss.portfolio/AircraftNoise");
+var G__358769 = G__358641;
+goog.object.set(G__358769,"displayName","bbss.portfolio/AircraftNoise");
 
-return G__107123;
+return G__358769;
 } else {
-return G__107014;
+return G__358641;
 }
 })();
 
@@ -468,165 +565,223 @@ return G__107014;
 bbss.portfolio.cljsc2_points = new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"point","point",1813198264),"Allows running and configuring multiple instances of SC2 games."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"point","point",1813198264),"Allows interactive control of SC2 game via Clojure REPL."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"point","point",1813198264),"Wraps full API for low level control."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"point","point",1813198264),"Provides data-based api with game-state query capabilities for higher level control."], null)], null);
 bbss.portfolio.cljsc2_tt = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Parses API EBNF context free grammar file to generate Clojure specs."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Provides datalog version of gamestate, and higher level rules to start playing the game."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Integrated clojure and cljsc2 into Jupyter Notebook for interactive studies."], null)], null);
 
-bbss.portfolio.Cljsc2 = (function (){var G__107126 = (function bbss$portfolio$Cljsc2(props__48880__auto__,maybe_ref__48881__auto__){
-var vec__107127 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__48880__auto__),maybe_ref__48881__auto__], null);
-var map__107130 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107127,(0),null);
-var map__107130__$1 = cljs.core.__destructure_map(map__107130);
-var to_page = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107130__$1,new cljs.core.Keyword(null,"to-page","to-page",-1069954033));
+bbss.portfolio.Cljsc2 = (function (){var G__358772 = (function bbss$portfolio$Cljsc2(props__66614__auto__,maybe_ref__66615__auto__){
+var vec__358773 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__66614__auto__),maybe_ref__66615__auto__], null);
+var map__358776 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358773,(0),null);
+var map__358776__$1 = cljs.core.__destructure_map(map__358776);
+var to_page = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358776__$1,new cljs.core.Keyword(null,"to-page","to-page",-1069954033));
 
-var vec__107131 = module$node_modules$react$index.useState("points");
-var selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107131,(0),null);
-var set_selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107131,(1),null);
-var vec__107134 = bbss.portfolio.use_window_dimensions();
-var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107134,(0),null);
-var window_height = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107134,(1),null);
-return helix.core.get_react().createElement(helix.core.Fragment,null,helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107138 = ({"offset":(3),"speed":0.5,"style":({"height": "40px", "zIndex": (5)})});
-return obj107138;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107140 = ({"variant":"h1","style":({"color": "transparent", "WebkitTextStrokeWidth": "2px", "WebkitTextStrokeColor": "#929EA6"})});
-return obj107140;
-})(),"CLJSC2")),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107142 = ({"offset":2.9,"speed":0.4});
-return obj107142;
-})(),helix.core.get_react().createElement("img",(function (){var obj107144 = ({"style":(function (){var obj107146 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("rotate(10deg)")});
-return obj107146;
+var vec__358777 = module$node_modules$react$index.useState("points");
+var selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358777,(0),null);
+var set_selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358777,(1),null);
+var is_mobile_QMARK_ = (function (){var ua = navigator.userAgent.toLowerCase();
+var or__4223__auto__ = ua.includes("ipad");
+if(cljs.core.truth_(or__4223__auto__)){
+return or__4223__auto__;
+} else {
+var or__4223__auto____$1 = ua.includes("ios");
+if(cljs.core.truth_(or__4223__auto____$1)){
+return or__4223__auto____$1;
+} else {
+return ua.includes("android");
+}
+}
+})();
+var vec__358780 = bbss.portfolio.use_window_dimensions();
+var _ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358780,(0),null);
+var window_height = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358780,(1),null);
+return helix.core.get_react().createElement(helix.core.Fragment,null,helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358784 = ({"offset":(3),"speed":0.5,"style":({"height": "40px", "zIndex": (5)})});
+return obj358784;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358786 = ({"variant":"h1","style":({"color": "transparent", "WebkitTextStrokeWidth": "2px", "WebkitTextStrokeColor": "#929EA6"})});
+return obj358786;
+})(),"CLJSC2")),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358788 = ({"offset":2.999,"speed":0.4});
+return obj358788;
+})(),helix.core.get_react().createElement("img",(function (){var obj358790 = ({"style":(function (){var obj358792 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("rotate(10deg)")});
+return obj358792;
 })(),"height":"500px","src":"meblizz.jpeg"});
-return obj107144;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107148 = ({"offset":2.8,"speed":0.6});
-return obj107148;
-})(),helix.core.get_react().createElement("img",(function (){var obj107150 = ({"style":(function (){var obj107152 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("scale(0.4) rotate(-5deg)")});
-return obj107152;
-})(),"src":"sc2.png"});
-return obj107150;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107154 = ({"offset":2.8,"speed":0.3});
-return obj107154;
-})(),helix.core.get_react().createElement("img",(function (){var obj107156 = ({"style":(function (){var obj107158 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"right":helix.impl.props.__GT_js("-70%"),"transform":helix.impl.props.__GT_js("rotate(3deg)")});
-return obj107158;
+return obj358790;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358794 = ({"offset":2.9999999,"speed":0.3});
+return obj358794;
+})(),helix.core.get_react().createElement("img",(function (){var obj358796 = ({"style":(function (){var obj358798 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"right":helix.impl.props.__GT_js("-70%"),"transform":helix.impl.props.__GT_js("rotate(3deg)")});
+return obj358798;
 })(),"height":"400px","src":"sc2notebook.png"});
-return obj107156;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107160 = ({"offset":2.8,"speed":0.6});
-return obj107160;
-})(),helix.core.get_react().createElement("img",(function (){var obj107162 = ({"style":(function (){var obj107164 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("scale(0.4) rotate(-3deg)")});
-return obj107164;
+return obj358796;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358800 = ({"offset":2.99,"speed":0.6});
+return obj358800;
+})(),helix.core.get_react().createElement("img",(function (){var obj358802 = ({"style":(function (){var obj358804 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("scale(0.4) rotate(-3deg)")});
+return obj358804;
 })(),"src":"sc2deepmind.jpeg"});
-return obj107162;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107166 = ({"offset":(3),"speed":1.2,"style":({"background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)", "zIndex": (3)})});
-return obj107166;
-})(),helix.core.get_react().createElement("div",(function (){var obj107168 = ({"style":(function (){var obj107170 = ({"display":helix.impl.props.__GT_js("flex"),"position":helix.impl.props.__GT_js("relative")});
-return obj107170;
+return obj358802;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358806 = ({"offset":2.999,"speed":0.1});
+return obj358806;
+})(),helix.core.get_react().createElement("img",(function (){var obj358808 = ({"style":(function (){var obj358810 = ({"position":helix.impl.props.__GT_js("relative"),"left":helix.impl.props.__GT_js("20%"),"transform":helix.impl.props.__GT_js("scale(0.6) rotate(-5deg)")});
+return obj358810;
+})(),"src":"sc2.png"});
+return obj358808;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358812 = ({"offset":(3),"speed":1.2,"style":({"background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)", "height": "110vh", "zIndex": (3)})});
+return obj358812;
+})(),helix.core.get_react().createElement("div",(function (){var obj358814 = ({"style":(function (){var obj358816 = ({"display":helix.impl.props.__GT_js("flex"),"position":helix.impl.props.__GT_js("relative")});
+return obj358816;
 })()});
-return obj107168;
-})(),helix.core.get_react().createElement("div",(function (){var obj107172 = ({"style":(function (){var obj107174 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column"),"top":helix.impl.props.__GT_js("130px"),"position":helix.impl.props.__GT_js("relative"),"margin":helix.impl.props.__GT_js("10px")});
-return obj107174;
+return obj358814;
+})(),helix.core.get_react().createElement("div",(function (){var obj358818 = ({"style":(function (){var obj358820 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column"),"top":helix.impl.props.__GT_js("130px"),"position":helix.impl.props.__GT_js("relative"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358820;
 })()});
-return obj107172;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107176 = ({"variant":"body1","style":({"color": "lightgray"})});
-return obj107176;
-})(),"Wrote an open source Clojure library to the StarCraft II AI API."),helix.core.get_react().createElement("br",null),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107178 = ({"variant":"body1","style":({"color": "lightgray"})});
-return obj107178;
-})(),"When DeepMind beat the legendary Lee Sedol (\uC774\uC138\uB3CC) in the old Asian game of Go they announced maybe tackling StarCraft next, I got very excited.."),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107180 = ({"variant":"body1","style":({"color": "lightgray"})});
-return obj107180;
-})(),"When Blizzard announced their cooperation and AI API I knew I wanted to hook up my favorite programming language to experiment with it."),helix.core.get_react().createElement("br",null),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107182 = ({"varinat":"body1","style":({"color": "lightgray"})});
-return obj107182;
-})(),"Around the time I finished my first experiments I got an invite to a workshop with StarCraft II developers and DeepMind researchers!"),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107184 = ({"varinat":"body1","style":({"color": "lightgray"})});
-return obj107184;
-})(),"Super lucky to meet a lot of smart people and talk about these awesome topics."),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Paper,(function (){var obj107186 = ({"style":({"marginTop": "50px", "minHeight": "80px", "background": "linear-gradient(white 60%, transparent 100%)"})});
-return obj107186;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tabs,(function (){var obj107188 = ({"value":selected_tab,"onChange":(function (___$1,e2){
+return obj358818;
+})(),helix.core.get_react().createElement("div",(function (){var obj358822 = ({"style":(function (){var obj358824 = ({"display":helix.impl.props.__GT_js("inline")});
+return obj358824;
+})()});
+return obj358822;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358826 = ({"variant":"body1","style":({"color": "lightgray", "display": "inline"})});
+return obj358826;
+})(),"Wrote an "),helix.core.get_react().createElement("a",(function (){var obj358828 = ({"href":"https://github.com/bbss/cljsc2","style":helix.impl.props.native_style(({"background": "rgba(255,255,255,0.5)"}))});
+return obj358828;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358830 = ({"variant":"body1","style":({"display": "inline"})});
+return obj358830;
+})(),"open source Clojure library")),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358832 = ({"variant":"body1","style":({"color": "lightgray", "display": "inline"})});
+return obj358832;
+})()," to the StarCraft II AI API.")),helix.core.get_react().createElement("br",null),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358834 = ({"variant":"body1","style":({"color": "lightgray"})});
+return obj358834;
+})(),"When DeepMind beat the legendary Lee Sedol (\uC774\uC138\uB3CC) in the old Asian game of Go they announced maybe tackling StarCraft next, I got very excited.."),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358836 = ({"variant":"body1","style":({"color": "lightgray"})});
+return obj358836;
+})(),"When Blizzard announced their cooperation and AI API I knew I wanted to hook up my favorite programming language to experiment with it."),helix.core.get_react().createElement("br",null),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358838 = ({"varinat":"body1","style":({"color": "lightgray"})});
+return obj358838;
+})(),"Around the time I finished my first experiments I got an invite to a workshop with StarCraft II developers and DeepMind researchers!"),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358840 = ({"varinat":"body1","style":({"color": "lightgray"})});
+return obj358840;
+})(),"Super lucky to meet a lot of smart people and talk about these awesome topics."),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Paper,(function (){var obj358842 = ({"style":({"marginTop": "50px", "minHeight": "80px", "background": "linear-gradient(white 60%, transparent 100%)"})});
+return obj358842;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tabs,(function (){var obj358844 = ({"value":selected_tab,"onChange":(function (___$1,e2){
 return (set_selected_tab.cljs$core$IFn$_invoke$arity$1 ? set_selected_tab.cljs$core$IFn$_invoke$arity$1(e2) : set_selected_tab.call(null,e2));
 })});
-return obj107188;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj107190 = ({"value":"points","label":"Highlights"});
-return obj107190;
-})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj107192 = ({"value":"tt","label":"Technical Tidbits"});
-return obj107192;
-})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj107194 = ({"value":"yt","label":"Meetup Talk"});
-return obj107194;
-})())),helix.core.get_react().createElement("div",(function (){var obj107196 = ({"style":(function (){var obj107198 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("row"),"marginTop":helix.impl.props.__GT_js("20px"),"position":helix.impl.props.__GT_js("relative"),"left":helix.impl.props.__GT_js("20px")});
-return obj107198;
+return obj358844;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj358846 = ({"value":"points","label":"Highlights"});
+return obj358846;
+})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj358848 = ({"value":"tt","label":"Technical Tidbits"});
+return obj358848;
+})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj358850 = ({"value":"yt","label":"Meetup Talk"});
+return obj358850;
+})())),helix.core.get_react().createElement("div",(function (){var obj358852 = ({"style":(function (){var obj358854 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("row"),"marginTop":helix.impl.props.__GT_js("20px"),"position":helix.impl.props.__GT_js("relative"),"left":helix.impl.props.__GT_js("20px")});
+return obj358854;
 })()});
-return obj107196;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj107200 = ({"direction":"right","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points")});
-return obj107200;
-})(),helix.core.get_react().createElement("div",(function (){var obj107202 = ({"style":(function (){var obj107204 = ({"position":helix.impl.props.__GT_js("absolute"),"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column")});
-return obj107204;
+return obj358852;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj358856 = ({"direction":"right","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points")});
+return obj358856;
+})(),helix.core.get_react().createElement("div",(function (){var obj358858 = ({"style":(function (){var obj358860 = ({"position":helix.impl.props.__GT_js("absolute"),"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column")});
+return obj358860;
 })()});
-return obj107202;
-})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__107205){
-var vec__107206 = p__107205;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107206,(0),null);
-var map__107209 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107206,(1),null);
-var map__107209__$1 = cljs.core.__destructure_map(map__107209);
-var point = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107209__$1,new cljs.core.Keyword(null,"point","point",1813198264));
-var starts_at = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107209__$1,new cljs.core.Keyword(null,"starts-at","starts-at",-624383465));
-return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107211 = ({"key":index,"variant":"h6","color":"primary"});
-return obj107211;
+return obj358858;
+})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__358861){
+var vec__358862 = p__358861;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358862,(0),null);
+var map__358865 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358862,(1),null);
+var map__358865__$1 = cljs.core.__destructure_map(map__358865);
+var point = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358865__$1,new cljs.core.Keyword(null,"point","point",1813198264));
+var starts_at = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358865__$1,new cljs.core.Keyword(null,"starts-at","starts-at",-624383465));
+return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358867 = ({"key":index,"variant":"h6","color":"primary"});
+return obj358867;
 })(),point);
-}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.cljsc2_points)))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj107213 = ({"direction":"left","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"tt")});
-return obj107213;
-})(),helix.core.get_react().createElement("div",(function (){var obj107215 = ({"style":(function (){var obj107217 = ({"position":helix.impl.props.__GT_js("absolute")});
-return obj107217;
+}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.cljsc2_points)))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj358869 = ({"direction":"left","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"tt")});
+return obj358869;
+})(),helix.core.get_react().createElement("div",(function (){var obj358871 = ({"style":(function (){var obj358873 = ({"position":helix.impl.props.__GT_js("absolute")});
+return obj358873;
 })()});
-return obj107215;
-})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__107218){
-var vec__107219 = p__107218;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107219,(0),null);
-var map__107222 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107219,(1),null);
-var map__107222__$1 = cljs.core.__destructure_map(map__107222);
-var tidbit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107222__$1,new cljs.core.Keyword(null,"tidbit","tidbit",1352532847));
-return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107224 = ({"key":index,"variant":"h6","color":"primary"});
-return obj107224;
+return obj358871;
+})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__358874){
+var vec__358875 = p__358874;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358875,(0),null);
+var map__358878 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358875,(1),null);
+var map__358878__$1 = cljs.core.__destructure_map(map__358878);
+var tidbit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358878__$1,new cljs.core.Keyword(null,"tidbit","tidbit",1352532847));
+return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358880 = ({"key":index,"variant":"h6","color":"primary"});
+return obj358880;
 })(),tidbit);
-}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.cljsc2_tt)))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj107226 = ({"direction":"up","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"yt")});
-return obj107226;
-})(),helix.core.get_react().createElement("div",(function (){var obj107228 = ({"style":(function (){var obj107230 = ({"position":helix.impl.props.__GT_js("absolute")});
-return obj107230;
+}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.cljsc2_tt)))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj358882 = ({"direction":"up","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"yt")});
+return obj358882;
+})(),helix.core.get_react().createElement("div",(function (){var obj358884 = ({"style":(function (){var obj358886 = ({"position":helix.impl.props.__GT_js("absolute")});
+return obj358886;
 })()});
-return obj107228;
-})(),helix.core.get_react().createElement("iframe",(function (){var obj107232 = ({"width":(560),"height":(315),"src":"https://www.youtube.com/embed/c5DifklnMI8","frameBorder":(0),"allow":"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"});
-return obj107232;
-})()))))))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.ButtonBase,(function (){var obj107234 = ({"style":({"position": "absolute", "left": "10px", "bottom": "20px", "zIndex": (10)}),"onClick":(function (){
+return obj358884;
+})(),helix.core.get_react().createElement("iframe",(function (){var obj358888 = ({"width":(560),"height":(315),"src":"https://www.youtube.com/embed/c5DifklnMI8","frameBorder":(0),"allow":"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"});
+return obj358888;
+})()))))))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.ButtonBase,(function (){var obj358890 = ({"style":({"minHeight": "10vh", "position": "absolute", "padding": "10px", "paddingRight": "40px", "bottom": (cljs.core.truth_(is_mobile_QMARK_)?"20vh":"10vh"), "left": "10px", "zIndex": (10)}),"onClick":(function (){
 return (to_page.cljs$core$IFn$_invoke$arity$1 ? to_page.cljs$core$IFn$_invoke$arity$1((4)) : to_page.call(null,(4)));
 })});
-return obj107234;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107236 = ({"variant":"caption","style":({"fontWeight": "800", "color": "rgba(255,255,255,0.8)", "fontSize": "20px"})});
-return obj107236;
-})(),"DATA.WORLDBANK.ORG"),helix.core.get_react().createElement("span",(function (){var obj107238 = ({"style":(function (){var obj107240 = ({"position":helix.impl.props.__GT_js("absolute"),"left":helix.impl.props.__GT_js("240px")});
-return obj107240;
+return obj358890;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358892 = ({"variant":"caption","style":({"fontWeight": "800", "color": "rgba(255,255,255,0.8)", "fontSize": "20px"})});
+return obj358892;
+})(),"DATA.WORLDBANK.ORG"),helix.core.get_react().createElement("span",(function (){var obj358894 = ({"style":(function (){var obj358896 = ({"position":helix.impl.props.__GT_js("absolute"),"left":helix.impl.props.__GT_js("240px")});
+return obj358896;
 })()});
-return obj107238;
+return obj358894;
 })(),helix.core.get_react().createElement(bbss.portfolio.arrow_down,null)))));
 });
 if(goog.DEBUG === true){
-var G__107241 = G__107126;
-goog.object.set(G__107241,"displayName","bbss.portfolio/Cljsc2");
+var G__358897 = G__358772;
+goog.object.set(G__358897,"displayName","bbss.portfolio/Cljsc2");
 
-return G__107241;
+return G__358897;
 } else {
-return G__107126;
+return G__358772;
 }
 })();
 
 
 
 bbss.portfolio.wb_points = new cljs.core.PersistentVector(null, 3, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Autocompletes datasets/countries regions",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(0)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Has graphs and map visualizations",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(11)], null),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"point","point",1813198264),"Recommends further related data",new cljs.core.Keyword(null,"starts-at","starts-at",-624383465),(20)], null)], null);
-bbss.portfolio.wb_tt = new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Early adopter of ReactJS Redux pattern."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Wraps datasets with a falcorJS data resolution system: "], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Simplifies data fetching, caching, batching for network-limited devices."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Uses D3.js for custom graphs e.g. invisible voronoi diagram allows intuitive touch interactions."], null)], null);
+bbss.portfolio.wb_tt = new cljs.core.PersistentVector(null, 5, 5, cljs.core.PersistentVector.EMPTY_NODE, [new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Used by millions of people!"], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Early adopter of ReactJS Redux pattern."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Wraps datasets with a falcorJS data resolution system: "], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"Easy fetching, caching, batching for slow devices."], null),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"tidbit","tidbit",1352532847),"D3.js for custom graphs + intuitive touch interactions."], null)], null);
 
-bbss.portfolio.Worldbank = (function (){var G__107244 = (function bbss$portfolio$Worldbank(props__48880__auto__,maybe_ref__48881__auto__){
-var vec__107245 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__48880__auto__),maybe_ref__48881__auto__], null);
-var map__107248 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107245,(0),null);
-var map__107248__$1 = cljs.core.__destructure_map(map__107248);
-var to_page = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107248__$1,new cljs.core.Keyword(null,"to-page","to-page",-1069954033));
+bbss.portfolio.Worldbank = (function (){var G__358900 = (function bbss$portfolio$Worldbank(props__66614__auto__,maybe_ref__66615__auto__){
+var vec__358901 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__66614__auto__),maybe_ref__66615__auto__], null);
+var map__358904 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358901,(0),null);
+var map__358904__$1 = cljs.core.__destructure_map(map__358904);
+var to_page = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358904__$1,new cljs.core.Keyword(null,"to-page","to-page",-1069954033));
 
 var video_ref = module$node_modules$react$index.useRef();
-var vec__107249 = module$node_modules$react$index.useState((0));
-var highlighted_point = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107249,(0),null);
-var set_point = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107249,(1),null);
-var vec__107252 = module$node_modules$react$index.useState(false);
-var hovered_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107252,(0),null);
-var set_hovered_BANG_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107252,(1),null);
-var vec__107255 = module$node_modules$react$index.useState("points");
-var selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107255,(0),null);
-var set_selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107255,(1),null);
-var phone_spring = module$node_modules$$react_spring$web$dist$react_spring_web_cjs.useSpring(({"transform": (cljs.core.truth_(hovered_QMARK_)?"skew(0deg, 0deg) scale(0.9)":"skew(5deg, 5deg) scale(0.8)"), "config": module$node_modules$$react_spring$web$dist$react_spring_web_cjs.config.stiff}));
+var vec__358905 = module$node_modules$react$index.useState((0));
+var highlighted_point = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358905,(0),null);
+var set_point = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358905,(1),null);
+var vec__358908 = module$node_modules$react$index.useState(false);
+var hovered_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358908,(0),null);
+var set_hovered_BANG_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358908,(1),null);
+var vec__358911 = module$node_modules$react$index.useState("points");
+var selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358911,(0),null);
+var set_selected_tab = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358911,(1),null);
+var vec__358914 = module$node_modules$react_intersection_observer$react_intersection_observer.useInView(({"threshold": 0.5}));
+var in_view_ref = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358914,(0),null);
+var in_view_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358914,(1),null);
+var is_mobile_QMARK_ = (function (){var ua = navigator.userAgent.toLowerCase();
+var or__4223__auto__ = ua.includes("ipad");
+if(cljs.core.truth_(or__4223__auto__)){
+return or__4223__auto__;
+} else {
+var or__4223__auto____$1 = ua.includes("ios");
+if(cljs.core.truth_(or__4223__auto____$1)){
+return or__4223__auto____$1;
+} else {
+return ua.includes("android");
+}
+}
+})();
+var dims = bbss.portfolio.use_window_dimensions();
+var font_size = (((cljs.core.first(dims) < (660)))?"12px":(((cljs.core.first(dims) < (780)))?"14px":"18px"
+));
+var available_phone_width = (cljs.core.first(dims) - (((cljs.core.first(dims) < (660)))?(200):(((cljs.core.first(dims) < (780)))?(300):(400)
+)));
+var ratio = (cljs.core.truth_(is_mobile_QMARK_)?(function (){var x__4309__auto__ = (1);
+var y__4310__auto__ = (function (){var x__4306__auto__ = 0.1;
+var y__4307__auto__ = (((cljs.core.second(dims) - ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points"))?(400):(500))) / (766)) - 0.2);
+return ((x__4306__auto__ > y__4307__auto__) ? x__4306__auto__ : y__4307__auto__);
+})();
+return ((x__4309__auto__ < y__4310__auto__) ? x__4309__auto__ : y__4310__auto__);
+})():(function (){var x__4309__auto__ = 0.8;
+var y__4310__auto__ = (function (){var x__4306__auto__ = 0.1;
+var y__4307__auto__ = ((available_phone_width / (766)) - 0.2);
+return ((x__4306__auto__ > y__4307__auto__) ? x__4306__auto__ : y__4307__auto__);
+})();
+return ((x__4309__auto__ < y__4310__auto__) ? x__4309__auto__ : y__4310__auto__);
+})());
+var phone_spring = module$node_modules$$react_spring$web$dist$react_spring_web_cjs.useSpring(({"transform": (cljs.core.truth_(hovered_QMARK_)?["skew(0deg, 0deg) scale(",cljs.core.str.cljs$core$IFn$_invoke$arity$1(ratio),")"].join(''):["skew(5deg, 5deg) scale(",cljs.core.str.cljs$core$IFn$_invoke$arity$1(ratio),")"].join('')
+), "config": module$node_modules$$react_spring$web$dist$react_spring_web_cjs.config.stiff}));
 module$node_modules$react$index.useEffect((function (){
 var time_changed = (function (e){
 var new_point_index = bbss.portfolio.get_point_index(bbss.portfolio.wb_points,e.target.currentTime);
@@ -650,199 +805,254 @@ return null;
 });
 }));
 
-return helix.core.get_react().createElement(helix.core.Fragment,null,helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107259 = ({"offset":(4),"speed":0.5,"style":({"height": "40px", "zIndex": (5)})});
-return obj107259;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107261 = ({"variant":"h1","style":({"color": "transparent", "WebkitTextStrokeWidth": "2px", "WebkitTextStrokeColor": "#929EA6"})});
-return obj107261;
-})(),"data.worldbank.org")),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107263 = ({"offset":3.96,"speed":0.5});
-return obj107263;
-})(),helix.core.get_react().createElement("img",(function (){var obj107265 = ({"style":(function (){var obj107267 = ({"position":helix.impl.props.__GT_js("relative"),"left":helix.impl.props.__GT_js("800px"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("rotate(10deg)")});
-return obj107267;
+module$node_modules$react$index.useEffect((function (){
+if(cljs.core.truth_((function (){var and__4221__auto__ = in_view_QMARK_;
+if(cljs.core.truth_(and__4221__auto__)){
+return video_ref.current;
+} else {
+return and__4221__auto__;
+}
+})())){
+return (video_ref.current.currentTime = (0));
+} else {
+return null;
+}
+}),[in_view_QMARK_]);
+
+return helix.core.get_react().createElement(helix.core.Fragment,null,helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358918 = ({"offset":(4),"speed":0.5,"style":({"height": "40px", "zIndex": (5)})});
+return obj358918;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358920 = ({"variant":"h1","ref":in_view_ref,"style":({"color": "transparent", "WebkitTextStrokeWidth": "2px", "WebkitTextStrokeColor": "#929EA6"})});
+return obj358920;
+})(),"data.worldbank.org")),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358922 = ({"offset":3.96,"speed":0.5});
+return obj358922;
+})(),helix.core.get_react().createElement("img",(function (){var obj358924 = ({"style":(function (){var obj358926 = ({"position":helix.impl.props.__GT_js("relative"),"left":helix.impl.props.__GT_js("800px"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("rotate(10deg)")});
+return obj358926;
 })(),"height":"250px","src":"wbindicators.png"});
-return obj107265;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107269 = ({"offset":3.96,"speed":0.4});
-return obj107269;
-})(),helix.core.get_react().createElement("img",(function (){var obj107271 = ({"style":(function (){var obj107273 = ({"position":helix.impl.props.__GT_js("relative"),"left":helix.impl.props.__GT_js("300px"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("rotate(5deg)")});
-return obj107273;
+return obj358924;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358928 = ({"offset":3.96,"speed":0.4});
+return obj358928;
+})(),helix.core.get_react().createElement("img",(function (){var obj358930 = ({"style":(function (){var obj358932 = ({"position":helix.impl.props.__GT_js("relative"),"left":helix.impl.props.__GT_js("300px"),"borderRadius":helix.impl.props.__GT_js("20px"),"transform":helix.impl.props.__GT_js("rotate(5deg)")});
+return obj358932;
 })(),"height":"250px","src":"wbmain.png"});
-return obj107271;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107275 = ({"offset":3.96,"speed":0.3});
-return obj107275;
-})(),helix.core.get_react().createElement("img",(function (){var obj107277 = ({"style":(function (){var obj107279 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"left":helix.impl.props.__GT_js("0px"),"transform":helix.impl.props.__GT_js("rotate(-5deg)")});
-return obj107279;
+return obj358930;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358934 = ({"offset":3.96,"speed":0.3});
+return obj358934;
+})(),helix.core.get_react().createElement("img",(function (){var obj358936 = ({"style":(function (){var obj358938 = ({"position":helix.impl.props.__GT_js("relative"),"borderRadius":helix.impl.props.__GT_js("20px"),"left":helix.impl.props.__GT_js("0px"),"transform":helix.impl.props.__GT_js("rotate(-5deg)")});
+return obj358938;
 })(),"height":"250px","src":"wb2.png"});
-return obj107277;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107281 = ({"offset":(4),"speed":1.2,"style":({"background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)", "zIndex": (3)})});
-return obj107281;
-})(),helix.core.get_react().createElement("div",(function (){var obj107283 = ({"style":(function (){var obj107285 = ({"display":helix.impl.props.__GT_js("flex"),"position":helix.impl.props.__GT_js("relative")});
-return obj107285;
+return obj358936;
+})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj358940 = ({"offset":(4),"speed":1.2,"style":({"background": "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)", "zIndex": (3)})});
+return obj358940;
+})(),helix.core.get_react().createElement("div",(function (){var obj358942 = ({"style":(function (){var obj358944 = ({"display":helix.impl.props.__GT_js("flex"),"position":helix.impl.props.__GT_js("relative")});
+return obj358944;
+})(),"ref":in_view_ref});
+return obj358942;
+})(),helix.core.get_react().createElement("div",(function (){var obj358946 = ({"style":(function (){var obj358948 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column"),"top":helix.impl.props.__GT_js("130px"),"position":helix.impl.props.__GT_js("relative"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358948;
 })()});
-return obj107283;
-})(),helix.core.get_react().createElement("div",(function (){var obj107287 = ({"style":(function (){var obj107289 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column"),"top":helix.impl.props.__GT_js("130px"),"position":helix.impl.props.__GT_js("relative"),"margin":helix.impl.props.__GT_js("10px")});
-return obj107289;
-})()});
-return obj107287;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107291 = ({"variant":"body1","style":({"color": "lightgray"})});
-return obj107291;
-})(),"Built the mobile-first SPA for the Open Data platform of the World Bank. The Open Data platform has a big dataset of yearly indicators for all countries in the world.  The datasets are explorable in a bunch of ways and can be mixed and visualized to the user's liking."),helix.core.get_react().createElement("br",null),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107293 = ({"variant":"body1","style":({"color": "lightgray"})});
-return obj107293;
-})(),"The Open Data platform has a big dataset of yearly indicators for all countries in the world."),helix.core.get_react().createElement("br",null),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107295 = ({"variant":"body1","style":({"color": "lightgray"})});
-return obj107295;
-})(),"The datasets are explorable in a bunch of ways and can be mixed and visualized to the user's liking."),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Paper,(function (){var obj107297 = ({"style":({"marginTop": "50px", "minHeight": "80px", "background": "linear-gradient(white 60%, transparent 100%)"})});
-return obj107297;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tabs,(function (){var obj107299 = ({"value":selected_tab,"onChange":(function (_,e2){
+return obj358946;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358950 = ({"variant":"body1","style":({"color": "lightgray"})});
+return obj358950;
+})(),"Built the mobile-first SPA for the Open Data platform of the World Bank. The Open Data platform has a big dataset of yearly indicators for all countries in the world.  The datasets are explorable in a bunch of ways and can be mixed and visualized to the user's liking."),helix.core.get_react().createElement("br",null),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358952 = ({"variant":"body1","style":({"color": "lightgray"})});
+return obj358952;
+})(),"The Open Data platform has a big dataset of yearly indicators for all countries in the world."),helix.core.get_react().createElement("br",null),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj358954 = ({"variant":"body1","style":({"color": "lightgray"})});
+return obj358954;
+})(),"The datasets are explorable in a bunch of ways and can be mixed and visualized to the user's liking."),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Paper,(function (){var obj358956 = ({"style":({"marginTop": "50px", "minHeight": "80px", "background": "linear-gradient(white 60%, transparent 100%)"})});
+return obj358956;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tabs,(function (){var obj358958 = ({"value":selected_tab,"onChange":(function (_,e2){
 return (set_selected_tab.cljs$core$IFn$_invoke$arity$1 ? set_selected_tab.cljs$core$IFn$_invoke$arity$1(e2) : set_selected_tab.call(null,e2));
 })});
-return obj107299;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj107301 = ({"value":"points","label":"Highlights"});
-return obj107301;
-})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj107303 = ({"value":"tt","label":"Technical Tidbits"});
-return obj107303;
-})())),helix.core.get_react().createElement("div",(function (){var obj107305 = ({"style":(function (){var obj107307 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("row"),"marginTop":helix.impl.props.__GT_js("20px"),"position":helix.impl.props.__GT_js("relative"),"left":helix.impl.props.__GT_js("20px")});
-return obj107307;
+return obj358958;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj358960 = ({"value":"points","label":"Highlights"});
+return obj358960;
+})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Tab,(function (){var obj358962 = ({"value":"tt","label":"Technical Tidbits"});
+return obj358962;
+})()),helix.core.get_react().createElement("img",(function (){var obj358964 = ({"src":"js.png","alt":"JavaScript","title":"JavaScript","height":"30px","width":"30px","style":(function (){var obj358966 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358966;
 })()});
-return obj107305;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj107309 = ({"direction":"right","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points")});
-return obj107309;
-})(),helix.core.get_react().createElement("div",(function (){var obj107311 = ({"style":(function (){var obj107313 = ({"position":helix.impl.props.__GT_js("absolute"),"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column")});
-return obj107313;
+return obj358964;
+})()),helix.core.get_react().createElement("img",(function (){var obj358968 = ({"src":"node.svg","alt":"node.js","title":"node.js","height":"30px","width":"30px","style":(function (){var obj358970 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358970;
 })()});
-return obj107311;
-})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__107314){
-var vec__107315 = p__107314;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107315,(0),null);
-var map__107318 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107315,(1),null);
-var map__107318__$1 = cljs.core.__destructure_map(map__107318);
-var point = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107318__$1,new cljs.core.Keyword(null,"point","point",1813198264));
-var starts_at = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107318__$1,new cljs.core.Keyword(null,"starts-at","starts-at",-624383465));
-return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Button,(function (){var obj107320 = ({"key":index,"variant":"outlined","style":({"transform": ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(index,highlighted_point))?"scale(1)":"scale(0.8)"), "transition": "200ms linear"}),"onClick":(function (){
+return obj358968;
+})()),helix.core.get_react().createElement("img",(function (){var obj358972 = ({"src":"d3.svg","alt":"JavaScript","title":"JavaScript","height":"30px","width":"30px","style":(function (){var obj358974 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358974;
+})()});
+return obj358972;
+})()),helix.core.get_react().createElement("img",(function (){var obj358976 = ({"src":"falcor.svg","alt":"falcorJS","title":"falcorJS","height":"30px","width":"30px","style":(function (){var obj358978 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358978;
+})()});
+return obj358976;
+})()),helix.core.get_react().createElement("img",(function (){var obj358980 = ({"src":"redis-cube.svg","alt":"redis","title":"redis","height":"30px","width":"30px","style":(function (){var obj358982 = ({"alignSelf":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("10px")});
+return obj358982;
+})()});
+return obj358980;
+})())),helix.core.get_react().createElement("div",(function (){var obj358984 = ({"style":(function (){var obj358986 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("row"),"marginTop":helix.impl.props.__GT_js("20px"),"position":helix.impl.props.__GT_js("relative")});
+return obj358986;
+})()});
+return obj358984;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj358988 = ({"direction":"right","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"points")});
+return obj358988;
+})(),helix.core.get_react().createElement("div",(function (){var obj358990 = ({"style":(function (){var obj358992 = ({"position":helix.impl.props.__GT_js("absolute"),"top":helix.impl.props.__GT_js("5px"),"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column")});
+return obj358992;
+})()});
+return obj358990;
+})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__358993){
+var vec__358994 = p__358993;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358994,(0),null);
+var map__358997 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__358994,(1),null);
+var map__358997__$1 = cljs.core.__destructure_map(map__358997);
+var point = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358997__$1,new cljs.core.Keyword(null,"point","point",1813198264));
+var starts_at = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__358997__$1,new cljs.core.Keyword(null,"starts-at","starts-at",-624383465));
+return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Button,(function (){var obj358999 = ({"key":index,"variant":"outlined","style":({"transform": ((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(index,highlighted_point))?"scale(1)":"scale(0.8)"), "transition": "200ms linear"}),"onClick":(function (){
 return (video_ref.current.currentTime = starts_at);
 })});
-return obj107320;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107322 = ({"variant":"h6","color":((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(index,highlighted_point))?"secondary":"primary")});
-return obj107322;
+return obj358999;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj359001 = ({"variant":"h6","style":({"fontSize": font_size}),"color":((cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(index,highlighted_point))?"secondary":"primary")});
+return obj359001;
 })(),point));
-}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.wb_points)))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj107324 = ({"direction":"left","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"tt")});
-return obj107324;
-})(),helix.core.get_react().createElement("div",(function (){var obj107326 = ({"style":(function (){var obj107328 = ({"position":helix.impl.props.__GT_js("absolute")});
-return obj107328;
+}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.wb_points)))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Slide,(function (){var obj359003 = ({"direction":"left","in":cljs.core._EQ_.cljs$core$IFn$_invoke$arity$2(selected_tab,"tt")});
+return obj359003;
+})(),helix.core.get_react().createElement("div",(function (){var obj359005 = ({"style":(function (){var obj359007 = ({"position":helix.impl.props.__GT_js("absolute")});
+return obj359007;
 })()});
-return obj107326;
-})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__107329){
-var vec__107330 = p__107329;
-var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107330,(0),null);
-var map__107333 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107330,(1),null);
-var map__107333__$1 = cljs.core.__destructure_map(map__107333);
-var tidbit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107333__$1,new cljs.core.Keyword(null,"tidbit","tidbit",1352532847));
-return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107335 = ({"key":index,"variant":"h6","color":"primary"});
-return obj107335;
+return obj359005;
+})(),cljs.core.map.cljs$core$IFn$_invoke$arity$2((function (p__359008){
+var vec__359009 = p__359008;
+var index = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__359009,(0),null);
+var map__359012 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__359009,(1),null);
+var map__359012__$1 = cljs.core.__destructure_map(map__359012);
+var tidbit = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__359012__$1,new cljs.core.Keyword(null,"tidbit","tidbit",1352532847));
+return helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj359014 = ({"key":index,"variant":"h6","style":({"paddingLeft": "10px", "fontSize": font_size}),"color":"primary"});
+return obj359014;
 })(),tidbit);
-}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.wb_tt))))))),helix.core.get_react().createElement("div",(function (){var obj107337 = ({"key":(0),"style":(function (){var obj107339 = ({"margin":helix.impl.props.__GT_js("30px")});
-return obj107339;
+}),cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,bbss.portfolio.wb_tt))))))),helix.core.get_react().createElement("div",(function (){var obj359016 = ({"key":(0),"style":(function (){var obj359018 = ({"margin":helix.impl.props.__GT_js("30px")});
+return obj359018;
 })()});
-return obj107337;
-})(),helix.core.get_react().createElement(module$node_modules$$react_spring$web$dist$react_spring_web_cjs.animated.div,(function (){var obj107341 = ({"onMouseOver":(function (){
+return obj359016;
+})(),helix.core.get_react().createElement(module$node_modules$$react_spring$web$dist$react_spring_web_cjs.animated.div,(function (){var obj359020 = ({"onMouseOver":(function (){
 return (set_hovered_BANG_.cljs$core$IFn$_invoke$arity$1 ? set_hovered_BANG_.cljs$core$IFn$_invoke$arity$1(true) : set_hovered_BANG_.call(null,true));
 }),"onMouseOut":(function (){
 return (set_hovered_BANG_.cljs$core$IFn$_invoke$arity$1 ? set_hovered_BANG_.cljs$core$IFn$_invoke$arity$1(false) : set_hovered_BANG_.call(null,false));
-}),"style":({"width": "330px", "height": "714px", "margin": "40px auto", "borderRadius": "40px", "transform": phone_spring.transform, "boxShadow": "0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111"})});
-return obj107341;
-})(),helix.core.get_react().createElement("video",(function (){var obj107343 = ({"autoPlay":true,"muted":true,"loop":true,"playsInline":true,"ref":video_ref,"style":(function (){var obj107345 = ({"width":helix.impl.props.__GT_js("330px"),"height":helix.impl.props.__GT_js("714px"),"zIndex":helix.impl.props.__GT_js((6)),"borderRadius":helix.impl.props.__GT_js("40px")});
-return obj107345;
+}),"style":(cljs.core.truth_(is_mobile_QMARK_)?({"transform": phone_spring.transform, "borderRadius": "40px", "top": "40vh", "width": "330px", "position": "absolute", "boxShadow": "0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111", "height": "714px", "left": ((cljs.core.first(dims) / (2)) - (155)), "margin": "40px auto"}):({"transform": phone_spring.transform, "borderRadius": "40px", "top": (((cljs.core.first(dims) < (660)))?(100):(((cljs.core.first(dims) < (780)))?(100):(50)
+)), "width": "330px", "right": (((cljs.core.first(dims) < (660)))?(230):(((cljs.core.first(dims) < (780)))?(120):(100)
+)), "position": "relative", "boxShadow": "0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111", "height": "714px", "margin": "40px auto"}))});
+return obj359020;
+})(),helix.core.get_react().createElement("video",(function (){var obj359022 = ({"autoPlay":true,"muted":true,"loop":true,"playsInline":true,"ref":video_ref,"style":(function (){var obj359024 = ({"width":helix.impl.props.__GT_js("330px"),"height":helix.impl.props.__GT_js("714px"),"zIndex":helix.impl.props.__GT_js((6)),"borderRadius":helix.impl.props.__GT_js("40px")});
+return obj359024;
 })()});
-return obj107343;
-})(),helix.core.get_react().createElement("source",(function (){var obj107347 = ({"src":"wb.mp4","type":"video/webm;codecs=\"vp8, vorbis\""});
-return obj107347;
-})()),helix.core.get_react().createElement("source",(function (){var obj107349 = ({"src":"wb.mov","type":"video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\""});
-return obj107349;
-})()))))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.ButtonBase,(function (){var obj107351 = ({"style":({"position": "absolute", "left": "10px", "bottom": "20px", "zIndex": (10)}),"onClick":(function (){
+return obj359022;
+})(),helix.core.get_react().createElement("source",(function (){var obj359026 = ({"src":"wb.mp4","type":"video/webm;codecs=\"vp8, vorbis\""});
+return obj359026;
+})()),helix.core.get_react().createElement("source",(function (){var obj359028 = ({"src":"wb.mov","type":"video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\""});
+return obj359028;
+})()))))),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.ButtonBase,(function (){var obj359030 = ({"style":({"zIndex": (10), "position": "absolute", "padding": "20px", "bottom": (0), "left": "10px"}),"onClick":(function (){
 return (to_page.cljs$core$IFn$_invoke$arity$1 ? to_page.cljs$core$IFn$_invoke$arity$1((0)) : to_page.call(null,(0)));
 })});
-return obj107351;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107353 = ({"variant":"caption","style":({"fontWeight": "800", "color": "rgba(255,255,255,0.8)", "fontSize": "20px"})});
-return obj107353;
-})(),"TOP"),helix.core.get_react().createElement("span",(function (){var obj107355 = ({"style":(function (){var obj107357 = ({"transform":helix.impl.props.__GT_js("rotate(180deg)"),"position":helix.impl.props.__GT_js("absolute"),"left":helix.impl.props.__GT_js("50px")});
-return obj107357;
+return obj359030;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj359032 = ({"variant":"caption","style":({"fontWeight": "800", "color": "rgba(255,255,255,0.8)", "fontSize": "20px"})});
+return obj359032;
+})(),"TOP"),helix.core.get_react().createElement("span",(function (){var obj359034 = ({"style":(function (){var obj359036 = ({"transform":helix.impl.props.__GT_js("rotate(180deg)"),"position":helix.impl.props.__GT_js("absolute"),"left":helix.impl.props.__GT_js("80px")});
+return obj359036;
 })()});
-return obj107355;
+return obj359034;
 })(),helix.core.get_react().createElement(bbss.portfolio.arrow_down,null)))));
 });
 if(goog.DEBUG === true){
-var G__107358 = G__107244;
-goog.object.set(G__107358,"displayName","bbss.portfolio/Worldbank");
+var G__359037 = G__358900;
+goog.object.set(G__359037,"displayName","bbss.portfolio/Worldbank");
 
-return G__107358;
+return G__359037;
 } else {
-return G__107244;
+return G__358900;
 }
 })();
 
 
 
 bbss.portfolio.works = new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Symbol(null,"korean-tools","korean-tools",1842211947,null),bbss.portfolio.KoreanTools,new cljs.core.Symbol(null,"aircraft-noise.org","aircraft-noise.org",-965640641,null),bbss.portfolio.AircraftNoise,new cljs.core.Symbol(null,"cljsc2","cljsc2",-1734546000,null),bbss.portfolio.Cljsc2,new cljs.core.Symbol(null,"worldbank","worldbank",-1267436091,null),bbss.portfolio.Worldbank], null);
-bbss.portfolio.orange = "#fadeac";
-bbss.portfolio.gray = "#929EA6";
 bbss.portfolio.theme = module$node_modules$$material_ui$core$esm$styles$index.createTheme(cljs.core.clj__GT_js(new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"typography","typography",-399568138),new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"fontFamily","fontFamily",1493518353),"Rubik, sans-serif"], null),new cljs.core.Keyword(null,"palette","palette",-456203511),new cljs.core.PersistentArrayMap(null, 2, [new cljs.core.Keyword(null,"primary","primary",817773892),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"light","light",1918998747),bbss.portfolio.gray,new cljs.core.Keyword(null,"main","main",-2117802661),bbss.portfolio.gray,new cljs.core.Keyword(null,"dark","dark",1818973999),bbss.portfolio.gray,new cljs.core.Keyword(null,"contrastText","contrastText",-587910032),"#fff"], null),new cljs.core.Keyword(null,"secondary","secondary",-669381460),new cljs.core.PersistentArrayMap(null, 4, [new cljs.core.Keyword(null,"light","light",1918998747),bbss.portfolio.orange,new cljs.core.Keyword(null,"main","main",-2117802661),bbss.portfolio.orange,new cljs.core.Keyword(null,"dark","dark",1818973999),bbss.portfolio.orange,new cljs.core.Keyword(null,"contrastText","contrastText",-587910032),"#fff"], null)], null)], null)));
 
-bbss.portfolio.Menu = (function (){var G__107361 = (function bbss$portfolio$Menu(props__48880__auto__,maybe_ref__48881__auto__){
-var vec__107362 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__48880__auto__),maybe_ref__48881__auto__], null);
-var map__107365 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107362,(0),null);
-var map__107365__$1 = cljs.core.__destructure_map(map__107365);
-var to_page = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__107365__$1,new cljs.core.Keyword(null,"to-page","to-page",-1069954033));
+bbss.portfolio.Menu = (function (){var G__359040 = (function bbss$portfolio$Menu(props__66614__auto__,maybe_ref__66615__auto__){
+var vec__359041 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__66614__auto__),maybe_ref__66615__auto__], null);
+var map__359044 = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__359041,(0),null);
+var map__359044__$1 = cljs.core.__destructure_map(map__359044);
+var to_page = cljs.core.get.cljs$core$IFn$_invoke$arity$2(map__359044__$1,new cljs.core.Keyword(null,"to-page","to-page",-1069954033));
 
 var pop_ref = module$node_modules$$react_spring$web$dist$react_spring_web_cjs.useSpringRef();
 var reveal_ref = module$node_modules$$react_spring$web$dist$react_spring_web_cjs.useSpringRef();
-var vec__107366 = module$node_modules$react_intersection_observer$react_intersection_observer.useInView(({}));
-var in_view_ref = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107366,(0),null);
-var top_in_view_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107366,(1),null);
+var vec__359045 = module$node_modules$react_intersection_observer$react_intersection_observer.useInView(({"threshold": 0.5}));
+var in_view_ref = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__359045,(0),null);
+var top_in_view_QMARK_ = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__359045,(1),null);
+var dims = bbss.portfolio.use_window_dimensions();
+var title_font_size = (((cljs.core.first(dims) > (1080)))?(80):(60)
+);
+var font_size = (((cljs.core.second(dims) > (700)))?(40):(30)
+);
 var links = cljs.core.map_indexed.cljs$core$IFn$_invoke$arity$2(cljs.core.vector,new cljs.core.PersistentVector(null, 4, 5, cljs.core.PersistentVector.EMPTY_NODE, ["korean.tools","aircraft-noise.org","cljsc2","data.worldbank.org"], null));
-var pop_spring = module$node_modules$$react_spring$web$dist$react_spring_web_cjs.useSpring(({"ref": pop_ref, "transform": (cljs.core.truth_(top_in_view_QMARK_)?"scale(1)":" scale(0)")}));
+var is_mobile_QMARK_ = (function (){var ua = navigator.userAgent.toLowerCase();
+var or__4223__auto__ = ua.includes("ipad");
+if(cljs.core.truth_(or__4223__auto__)){
+return or__4223__auto__;
+} else {
+var or__4223__auto____$1 = ua.includes("ios");
+if(cljs.core.truth_(or__4223__auto____$1)){
+return or__4223__auto____$1;
+} else {
+return ua.includes("android");
+}
+}
+})();
+var pop_spring = module$node_modules$$react_spring$web$dist$react_spring_web_cjs.useSpring(({"ref": pop_ref, "transform": (((((window.innerWidth < (1000))) && (cljs.core.not(is_mobile_QMARK_))))?"scale(0)":(cljs.core.truth_(top_in_view_QMARK_)?"scale(1)":"scale(0)"
+))}));
 var trail_spring = module$node_modules$$react_spring$web$dist$react_spring_web_cjs.useTransition((cljs.core.truth_(top_in_view_QMARK_)?cljs.core.to_array(links):[]),({"ref": reveal_ref, "reset": true, "trail": (50), "keys": cljs.core.comp.cljs$core$IFn$_invoke$arity$2(cljs.core.first,cljs.core.second), "config": ({"mass": (4), "tension": (2000), "friction": (200)}), "enter": ({"opacity": (cljs.core.truth_(top_in_view_QMARK_)?(1):(0)), "height": (cljs.core.truth_(top_in_view_QMARK_)?"100px":"0px"), "x": (cljs.core.truth_(top_in_view_QMARK_)?(0):(20))}), "from": ({"opacity": (0), "x": (20), "height": "100px"})}));
 module$node_modules$$react_spring$web$dist$react_spring_web_cjs.useChain((cljs.core.truth_(top_in_view_QMARK_)?[pop_ref,reveal_ref]:[reveal_ref,pop_ref]));
 
-return helix.core.get_react().createElement("div",(function (){var obj107370 = ({"ref":in_view_ref});
-return obj107370;
-})(),helix.core.get_react().createElement(module$node_modules$$react_spring$web$dist$react_spring_web_cjs.animated.div,(function (){var obj107372 = ({"style":({"display": "flex", "position": "absolute", "flexDirection": "column", "margin": "20px", "background": "rgba(100, 100, 100, 0.7)", "padding": "100px", "clipPath": "polygon(0 1%, 100% 0%, 90% 95%, 10% 90%)", "transform": pop_spring.transform})});
-return obj107372;
-})(),(function (){var G__107373 = (function (props,p__107374,opts){
-var vec__107375 = p__107374;
-var i = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107375,(0),null);
-var item = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__107375,(1),null);
-return helix.core.get_react().createElement(module$node_modules$$react_spring$web$dist$react_spring_web_cjs.animated.div,(function (){var obj107379 = ({"style":({"opacity": props.opacity, "height": props.height, "x": props.x}),"key":item});
-return obj107379;
-})(),helix.core.get_react().createElement(module$node_modules$$react_spring$web$dist$react_spring_web_cjs.animated.div,(function (){var obj107381 = ({"style":({})});
-return obj107381;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Button,(function (){var obj107383 = ({"variant":"outlined","style":({"margin": "15px", "padding": "15px", "textTransform": "none"}),"onClick":(function (){
-var G__107384 = (i + (1));
-return (to_page.cljs$core$IFn$_invoke$arity$1 ? to_page.cljs$core$IFn$_invoke$arity$1(G__107384) : to_page.call(null,G__107384));
+return helix.core.get_react().createElement(module$node_modules$$react_spring$web$dist$react_spring_web_cjs.animated.div,(function (){var obj359049 = ({"style":({"display": "flex", "flexDirection": "column", "margin": "20px", "background": "linear-gradient(to right, rgba(100, 100, 100, 0.15), rgba(100, 100, 100, 0.3))", "padding": "100px", "clipPath": "polygon(0 1%, 100% 0%, 90% 95%, 10% 90%)", "transform": pop_spring.transform}),"ref":in_view_ref});
+return obj359049;
+})(),helix.core.get_react().createElement("p",(function (){var obj359051 = ({"style":(function (){var obj359053 = ({"fontFamily":helix.impl.props.__GT_js("'Zen Tokyo Zoo', cursive"),"fontSize":helix.impl.props.__GT_js([cljs.core.str.cljs$core$IFn$_invoke$arity$1(title_font_size),"px"].join('')),"whiteSpace":helix.impl.props.__GT_js("nowrap"),"color":helix.impl.props.__GT_js("white")});
+return obj359053;
+})()});
+return obj359051;
+})(),"some of my work"),(function (){var G__359054 = (function (props,p__359055,opts){
+var vec__359056 = p__359055;
+var i = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__359056,(0),null);
+var item = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__359056,(1),null);
+return helix.core.get_react().createElement(module$node_modules$$react_spring$web$dist$react_spring_web_cjs.animated.div,(function (){var obj359060 = ({"style":({"opacity": props.opacity, "height": props.height, "x": props.x}),"key":item});
+return obj359060;
+})(),helix.core.get_react().createElement(module$node_modules$$react_spring$web$dist$react_spring_web_cjs.animated.div,(function (){var obj359062 = ({"style":({})});
+return obj359062;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Button,(function (){var obj359064 = ({"variant":"outlined","style":({"margin": (((cljs.core.second(dims) > (700)))?"15px":"0px"), "padding": (((cljs.core.second(dims) > (700)))?"15px":"0px"), "textTransform": "none"}),"onClick":(function (){
+var G__359065 = (i + (1));
+return (to_page.cljs$core$IFn$_invoke$arity$1 ? to_page.cljs$core$IFn$_invoke$arity$1(G__359065) : to_page.call(null,G__359065));
 })});
-return obj107383;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107386 = ({"variant":"h3","style":({"color": "transparent", "WebkitTextStrokeWidth": "1px", "WebkitTextStrokeColor": "white"})});
-return obj107386;
+return obj359064;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj359067 = ({"variant":"h3","style":({"color": "transparent", "fontSize": font_size, "WebkitTextStrokeWidth": "1px", "WebkitTextStrokeColor": "white"})});
+return obj359067;
 })(),item))));
 });
-return (trail_spring.cljs$core$IFn$_invoke$arity$1 ? trail_spring.cljs$core$IFn$_invoke$arity$1(G__107373) : trail_spring.call(null,G__107373));
-})()));
+return (trail_spring.cljs$core$IFn$_invoke$arity$1 ? trail_spring.cljs$core$IFn$_invoke$arity$1(G__359054) : trail_spring.call(null,G__359054));
+})());
 });
 if(goog.DEBUG === true){
-var G__107387 = G__107361;
-goog.object.set(G__107387,"displayName","bbss.portfolio/Menu");
+var G__359068 = G__359040;
+goog.object.set(G__359068,"displayName","bbss.portfolio/Menu");
 
-return G__107387;
+return G__359068;
 } else {
-return G__107361;
+return G__359040;
 }
 })();
 
 
 
 
-bbss.portfolio.App = (function (){var G__107391 = (function bbss$portfolio$App(props__48880__auto__,maybe_ref__48881__auto__){
-var vec__107392 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__48880__auto__),maybe_ref__48881__auto__], null);
+bbss.portfolio.App = (function (){var G__359072 = (function bbss$portfolio$App(props__66614__auto__,maybe_ref__66615__auto__){
+var vec__359073 = new cljs.core.PersistentVector(null, 2, 5, cljs.core.PersistentVector.EMPTY_NODE, [helix.core.extract_cljs_props(props__66614__auto__),maybe_ref__66615__auto__], null);
 
 var parallax_ref = module$node_modules$react$index.useRef();
-var to_page = (function (p1__107388_SHARP_){
-return parallax_ref.current.scrollTo(p1__107388_SHARP_);
+var to_page = (function (p1__359069_SHARP_){
+return parallax_ref.current.scrollTo(p1__359069_SHARP_);
 });
 var thin_QMARK_ = module$node_modules$$material_ui$core$index.useMediaQuery("(max-width: 1000px)");
 var long_QMARK_ = module$node_modules$$material_ui$core$index.useMediaQuery("(min-height: 804px)");
@@ -859,75 +1069,92 @@ return ua.includes("android");
 }
 }
 })();
-return helix.core.get_react().createElement(module$node_modules$$material_ui$core$esm$styles$index.ThemeProvider,(function (){var obj107396 = ({"theme":bbss.portfolio.theme});
-return obj107396;
-})(),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.Parallax,(function (){var obj107398 = ({"ref":parallax_ref,"pages":(cljs.core.count(bbss.portfolio.works) + (1)),"style":({"top": (0), "left": (0)})});
-return obj107398;
-})(),helix.core.get_react().createElement("div",(function (){var obj107400 = ({"style":(function (){var obj107402 = ({"borderRadius":helix.impl.props.__GT_js("0 0 30px 30px"),"height":helix.impl.props.__GT_js("calc(100vh - 100px)"),"overflow":helix.impl.props.__GT_js("hidden")});
-return obj107402;
-})()});
-return obj107400;
-})(),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107404 = ({"offset":(0),"speed":(2),"horizontal":true,"style":({"background": "linear-gradient(100deg, hsl(110deg 100% 91%) 0vw, hsl(110deg 100% 91%) 55vw, hsl(110deg 100% 91% / 0%) 55.1vw, hsl(90deg 50% 57% / 0%) 100vw)", "position": "relative", "height": "100vh", "width": "100vw"})});
-return obj107404;
-})()),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107406 = ({"offset":(0),"speed":-1.5,"horizontal":true,"style":({"background": "linear-gradient(80deg, hsl(233deg 100% 92% / 0%) 65vw, hsl(233deg 100% 92% / 100%) 65.1vw, hsl(233deg 100% 92% / 100%) 65.2vw, hsl(233deg 100% 92%) 100vw)", "height": "calc(200vh - 100px)", "width": "100vw"})});
-return obj107406;
-})())),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj107408 = ({"offset":(0)});
-return obj107408;
-})(),helix.core.get_react().createElement("div",(function (){var obj107410 = ({"style":(function (){var obj107412 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js((cljs.core.truth_((function (){var and__4221__auto__ = long_QMARK_;
+return helix.core.get_react().createElement(module$node_modules$$material_ui$core$esm$styles$index.ThemeProvider,(function (){var obj359077 = ({"theme":bbss.portfolio.theme});
+return obj359077;
+})(),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.Parallax,(function (){var obj359079 = ({"ref":parallax_ref,"pages":(cljs.core.count(bbss.portfolio.works) + (1)),"style":({"top": (0), "left": (0)})});
+return obj359079;
+})(),helix.core.get_react().createElement(module$node_modules$$react_spring$parallax$dist$react_spring_parallax_cjs.ParallaxLayer,(function (){var obj359081 = ({"offset":(0)});
+return obj359081;
+})(),helix.core.get_react().createElement("div",(function (){var obj359083 = ({"style":(function (){var obj359085 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js((cljs.core.truth_((function (){var and__4221__auto__ = long_QMARK_;
 if(cljs.core.truth_(and__4221__auto__)){
+var and__4221__auto____$1 = thin_QMARK_;
+if(cljs.core.truth_(and__4221__auto____$1)){
 return is_mobile_QMARK_;
+} else {
+return and__4221__auto____$1;
+}
 } else {
 return and__4221__auto__;
 }
 })())?"column":"row")),"width":helix.impl.props.__GT_js("100vw"),"height":helix.impl.props.__GT_js("100%")});
-return obj107412;
+return obj359085;
 })()});
-return obj107410;
-})(),helix.core.get_react().createElement("div",(function (){var obj107414 = ({"style":(function (){var obj107416 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column"),"alignItems":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("30px")});
-return obj107416;
+return obj359083;
+})(),helix.core.get_react().createElement("div",(function (){var obj359087 = ({"style":(function (){var obj359089 = ({"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column"),"alignItems":helix.impl.props.__GT_js("center"),"margin":helix.impl.props.__GT_js("30px")});
+return obj359089;
 })()});
-return obj107414;
-})(),helix.core.get_react().createElement("img",(function (){var obj107418 = ({"style":(function (){var obj107420 = ({"borderRadius":helix.impl.props.__GT_js("20px"),"zIndex":helix.impl.props.__GT_js((10)),"minHeight":helix.impl.props.__GT_js("30%"),"maxHeight":helix.impl.props.__GT_js("50%"),"maxWidth":helix.impl.props.__GT_js("30vw"),"verticalAlign":helix.impl.props.__GT_js("bottom"),"objectFit":helix.impl.props.__GT_js("cover")});
-return obj107420;
-})(),"src":"meblizz.jpeg"});
-return obj107418;
-})()),helix.core.get_react().createElement("div",({}),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107424 = ({"variant":"h2","style":({"whiteSpace": "nowrap"})});
-return obj107424;
-})(),"Baruch Berger"),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107426 = ({"variant":"h3","style":({"whiteSpace": "nowrap"})});
-return obj107426;
-})(),"software engineer"))),helix.core.get_react().createElement("div",(function (){var obj107428 = ({"style":(function (){var obj107430 = ({"position":helix.impl.props.__GT_js("relative"),"margin":helix.impl.props.__GT_js("30px"),"display":helix.impl.props.__GT_js("flex"),"flexDirection":helix.impl.props.__GT_js("column")});
-return obj107430;
+return obj359087;
+})(),helix.core.get_react().createElement("img",(function (){var obj359091 = ({"style":(function (){var obj359093 = ({"borderRadius":helix.impl.props.__GT_js("50%"),"zIndex":helix.impl.props.__GT_js((10)),"minHeight":helix.impl.props.__GT_js("30%"),"maxHeight":helix.impl.props.__GT_js("50%"),"maxWidth":helix.impl.props.__GT_js("30vw"),"verticalAlign":helix.impl.props.__GT_js("bottom"),"objectFit":helix.impl.props.__GT_js("cover")});
+return obj359093;
+})(),"src":"baruch.png"});
+return obj359091;
+})()),helix.core.get_react().createElement("div",({}),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj359097 = ({"variant":"h2","style":({"whiteSpace": "nowrap"})});
+return obj359097;
+})(),"Baruch Berger"),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj359099 = ({"variant":"h3","style":({"whiteSpace": "nowrap"})});
+return obj359099;
+})(),"software engineer"),helix.core.get_react().createElement("a",(function (){var obj359101 = ({"href":"https://github.com/bbss","style":(function (){var obj359103 = ({"display":helix.impl.props.__GT_js("flex"),"marginTop":helix.impl.props.__GT_js("20px"),"justifyContent":helix.impl.props.__GT_js("center")});
+return obj359103;
 })()});
-return obj107428;
-})(),helix.core.get_react().createElement(bbss.portfolio.Menu,(function (){var obj107432 = ({"to-page":to_page});
-return obj107432;
-})())),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.ButtonBase,(function (){var obj107434 = ({"style":({"position": "static", "flexDirection": "column", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-end", "cursor": "pointer"}),"onClick":(function (){
+return obj359101;
+})(),helix.core.get_react().createElement("img",(function (){var obj359105 = ({"style":(function (){var obj359107 = ({"position":helix.impl.props.__GT_js("relative"),"marginRight":helix.impl.props.__GT_js("10px")});
+return obj359107;
+})(),"height":"30px","src":"github.png"});
+return obj359105;
+})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj359109 = ({"variant":"h6","style":({"display": "inline", "whiteSpace": "nowrap"})});
+return obj359109;
+})(),"https://github.com/bbss")),helix.core.get_react().createElement("a",(function (){var obj359111 = ({"href":"mailto:baruchberger@gmail.com","style":(function (){var obj359113 = ({"display":helix.impl.props.__GT_js("flex"),"justifyContent":helix.impl.props.__GT_js("center")});
+return obj359113;
+})()});
+return obj359111;
+})(),helix.core.get_react().createElement("img",(function (){var obj359115 = ({"style":(function (){var obj359117 = ({"position":helix.impl.props.__GT_js("relative"),"marginLeft":helix.impl.props.__GT_js("7px"),"marginRight":helix.impl.props.__GT_js("9px"),"width":helix.impl.props.__GT_js("35px")});
+return obj359117;
+})(),"src":"mail.svg"});
+return obj359115;
+})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj359119 = ({"variant":"h6","style":({"display": "inline", "whiteSpace": "nowrap"})});
+return obj359119;
+})(),"baruchberger@gmail.com")))),helix.core.get_react().createElement(bbss.portfolio.Menu,(function (){var obj359121 = ({"to-page":to_page});
+return obj359121;
+})()),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.ButtonBase,(function (){var obj359123 = ({"style":({"position": "absolute", "bottom": "10vh", "left": "430px", "flexDirection": "column", "display": "flex", "alignItems": "flex-start", "justifyContent": "flex-end"}),"onClick":(function (){
 return parallax_ref.current.scrollTo((1));
 })});
-return obj107434;
-})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107436 = ({"variant":"caption","style":({"fontWeight": "800", "fontSize": "20px"})});
-return obj107436;
-})(),"SEE"),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107438 = ({"variant":"caption","style":({"fontWeight": "800", "fontSize": "20px"})});
-return obj107438;
-})(),"MY"),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj107440 = ({"variant":"caption","style":({"fontWeight": "800", "fontSize": "20px"})});
-return obj107440;
-})(),"WORK"),helix.core.get_react().createElement(bbss.portfolio.arrow_down,null)))),helix.core.get_react().createElement(bbss.portfolio.KoreanTools,(function (){var obj107442 = ({"to-page":to_page});
-return obj107442;
-})()),helix.core.get_react().createElement(bbss.portfolio.AircraftNoise,(function (){var obj107444 = ({"to-page":to_page});
-return obj107444;
-})()),helix.core.get_react().createElement(bbss.portfolio.Cljsc2,(function (){var obj107446 = ({"to-page":to_page});
-return obj107446;
-})()),helix.core.get_react().createElement(bbss.portfolio.Worldbank,(function (){var obj107448 = ({"to-page":to_page});
-return obj107448;
-})())));
+return obj359123;
+})(),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj359125 = ({"variant":"caption","style":({"fontWeight": "800", "fontSize": "20px"})});
+return obj359125;
+})(),"SEE"),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj359127 = ({"variant":"caption","style":({"fontWeight": "800", "fontSize": "20px"})});
+return obj359127;
+})(),"MY"),helix.core.get_react().createElement(module$node_modules$$material_ui$core$index.Typography,(function (){var obj359129 = ({"variant":"caption","style":({"fontWeight": "800", "fontSize": "20px"})});
+return obj359129;
+})(),"WORK"),helix.core.get_react().createElement(bbss.portfolio.arrow_down,null)))),helix.core.get_react().createElement(bbss.portfolio.KoreanTools,(function (){var obj359131 = ({"to-page":to_page});
+return obj359131;
+})()),helix.core.get_react().createElement(bbss.portfolio.AircraftNoise,(function (){var obj359133 = ({"to-page":to_page});
+return obj359133;
+})()),helix.core.get_react().createElement(bbss.portfolio.Cljsc2,(function (){var obj359135 = ({"to-page":to_page});
+return obj359135;
+})()),helix.core.get_react().createElement(bbss.portfolio.Worldbank,(function (){var obj359137 = ({"to-page":to_page});
+return obj359137;
+})())),helix.core.get_react().createElement("div",(function (){var obj359139 = ({"style":(function (){var obj359141 = ({"position":helix.impl.props.__GT_js("static"),"height":helix.impl.props.__GT_js("100vh"),"width":helix.impl.props.__GT_js("100vw"),"top":helix.impl.props.__GT_js((0)),"left":helix.impl.props.__GT_js((0)),"background":helix.impl.props.__GT_js("linear-gradient(-45deg, #47C5CF, #94DABC, #FFCF54, #FAD1E2)"),"backgroundSize":helix.impl.props.__GT_js("400% 400%"),"animation":helix.impl.props.__GT_js("gradient 15s ease infinite")});
+return obj359141;
+})()});
+return obj359139;
+})()));
 });
 if(goog.DEBUG === true){
-var G__107449 = G__107391;
-goog.object.set(G__107449,"displayName","bbss.portfolio/App");
+var G__359142 = G__359072;
+goog.object.set(G__359142,"displayName","bbss.portfolio/App");
 
-return G__107449;
+return G__359142;
 } else {
-return G__107391;
+return G__359072;
 }
 })();
 

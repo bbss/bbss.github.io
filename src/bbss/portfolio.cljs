@@ -26,6 +26,11 @@
      useMediaQuery]]
    [react-use-measure :as useMeasure]))
 
+
+(def orange "#fadeac")
+
+(def gray "#929EA6")
+
 (declare App)
 
 (def SPA (atom {}))
@@ -67,7 +72,7 @@
     :starts-at 0}
    {:point "Creates study of any Korean text or image (e.g. page of a book)"
     :starts-at 4}
-   {:point "Scans sentences, grammar, dictionary matches, translations"
+   {:point "Scans sentences, dictionary matches, grammar"
     :starts-at 8}
    {:point "Creates interactive view to aid understanding text"
     :starts-at 15}
@@ -79,8 +84,8 @@
    {:tidbit "Uses explicit state-machines in the UI where logic isn't trivial"}
    {:tidbit "Inspectable normalized data on front-end"}
    {:tidbit "Form-state makes server mutations minimal and unintrusive"}
-   {:tidbit "Intuitive data resolution from many datasources on back-end"}
-   {:tidbit "Makes use of fancy neural network tech for page content and Korean grammar analysis"}])
+   {:tidbit "Intuitive data resolution from many datasources"}
+   {:tidbit "Fancy neuralnet tech for content and Korean grammar analysis"}])
 
 (defn get-point-index [points at-time]
   (dec (or (->> points
@@ -102,8 +107,6 @@
 
 (defnc KoreanTools [{:keys [to-page]}]
   (let [video-ref  (react/useRef)
-        thin?      (useMediaQuery "(max-width: 1000px)")
-        long?      (useMediaQuery "(min-height: 804px)")
         [highlighted-point set-point]   (react/useState 0)
         [hovered? set-hovered!]         (react/useState false)
         [selected-tab set-selected-tab] (react/useState "points")
@@ -113,20 +116,36 @@
                       (.includes ua "ios")
                       (.includes ua "android")))
         dims (use-window-dimensions)
-        ratio (if long?
-                (min 0.8
+        font-size (cond  (< (first dims) 660) "12px"
+                         (< (first dims) 780) "14px"
+                         :else "18px"
+                         )
+        left-distance (cond  (< (first dims) 660) "200px"
+                             (< (first dims) 780) "240px"
+                             :else "280px"
+                             )
+        available-phone-width (- (first dims) (cond  (< (first dims) 660) 200
+                                                     (< (first dims) 780) 300
+                                                     :else 450
+                                                     ))
+        ratio (if is-mobile?
+                (min 1
                      (max 0.1 (- (/ (- (second dims)
                                        (if (= selected-tab "points") 400 500))
                                     766)
                                  0.2)))
-                0.8)
+                (min 0.8
+                     (max 0.1 (- (/ available-phone-width
+                                    766)
+                                 0.2))))
         phone-spring (useSpring #js {:transform
                                      (cond
                                        hovered?
                                        (str "skew(0deg, 0deg) scale(" ratio ")")
                                        :else
                                        (str "skew(5deg, 5deg) scale(" ratio ")"))
-                                     :config (.-stiff config)})]
+                                     :config (.-stiff config)})
+        [in-view-ref in-view?] (useInView #js {:threshold 0.1})]
     (react/useEffect
      (fn []
        (let [time-changed
@@ -143,6 +162,11 @@
                   (.removeEventListener
                    (.-current video-ref)
                    "timeupdate" time-changed))))))
+    (react/useEffect
+     (fn []
+       (when (and in-view? (.-current video-ref))
+         (set! (.. video-ref -current -currentTime) 0)))
+     #js [in-view?])
     (<> ($ ParallaxLayer
            {:offset 1
             :speed 0.5
@@ -156,8 +180,8 @@
            {:offset 0.95
             :speed 2.9
             :style #js {:zIndex -1
-                        :userSelect "none"
-                        :pointerEvents "none"}}
+                        }
+            :onClick #(to-page 1)}
            ($ :img {:style {:position "relative"
                             :borderRadius "20px"
                             :left "20%"
@@ -166,7 +190,8 @@
                     :src "ktmain.png"}))
         ($ ParallaxLayer
            {:offset 0.95
-            :speed 0.9}
+            :speed 0.9
+            :onClick #(to-page 1)}
            ($ :img {:style {:position "relative"
                             :borderRadius "2px"
                             :left "5%"
@@ -178,8 +203,8 @@
            {:offset 0.9
             :speed 0.4
             :style #js {:zIndex -1
-                        :userSelect "none"
-                        :pointerEvents "none"}}
+                        }
+            :onClick #(to-page 1)}
            ($ :img {:src "clj.png"
                     :height "50px"
                     :width  "50px"
@@ -201,10 +226,13 @@
         ($ ParallaxLayer
            {:offset 1
             :speed 1.2
-            :style #js {:background "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)"}}
-           ($ :div {:style {:display "flex" :position "relative" }}
+            :style #js {:background "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)"
+                        :height "110vh"}}
+           ($ :div {:style {:display "flex" :position "relative" }
+                    :ref in-view-ref}
               ($ :div {:style {:display "flex" :flexDirection "column"
                                :top "130px"
+                               :minWidth "90vw"
                                :position "relative"
                                :margin "10px"}}
                  ($ :p {:style {:display "inline-block"
@@ -236,7 +264,31 @@
                        ($ Tab {:value "points"
                                :label "Highlights"})
                        ($ Tab {:value "tt"
-                               :label "Technical Tidbits"}))
+                               :label "Technical Tidbits"})
+                       ($ :img {:src "clj.png"
+                                :title "Clojure"
+                                :alt "Clojure"
+                                :height "30px"
+                                :width  "30px"
+                                :style {:alignSelf "center" :margin "10px"}})
+                       ($ :img {:src "cljs-white.svg"
+                                :alt "ClojureScript"
+                                :title "ClojureScript"
+                                :height "30px"
+                                :width  "30px"
+                                :style {:alignSelf "center" :margin "10px"}})
+                       ($ :img {:src "xtdb.svg"
+                                :alt "xtdb"
+                                :title "xtdb"
+                                :height "30px"
+
+                                :style {:alignSelf "center" :margin "10px"}})
+                       ($ :img {:src "fulcro.svg"
+                                :alt "fulcro"
+                                :title "fulcro"
+                                :height "30px"
+                                :width  "30px"
+                                :style {:alignSelf "center" :margin "10px"}}))
 
                     ($ :div {:style {:display "flex"
                                      :flexDirection "row"
@@ -244,7 +296,9 @@
                                      :position "relative"
                                      :left "20px"}}
                        ($ Slide {:direction "right" :in (= selected-tab "points")}
-                          ($ :div {:style {:position "absolute"}
+                          ($ :div {:style {:position "absolute"
+                                           :display "flex"
+                                           :flexDirection (if is-mobile? "row" "column")}
                                     :elevation 3}
                              (->> hamburger-video-points
                                   (map-indexed vector)
@@ -255,6 +309,7 @@
                                                                 :transition "200ms linear"}
                                                     :onClick #(set! (.. video-ref -current -currentTime) starts-at)}
                                             ($ Typography {:variant "h6"
+                                                           :style #js {:fontSize font-size}
                                                            :color (if (= index highlighted-point) "secondary" "primary")} point)))))))
 
                        ($ Slide {:direction "left" :in (= selected-tab "tt")}
@@ -283,8 +338,8 @@
                       :transform (.-transform phone-spring)
                       :boxShadow "0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111"}
                  #js {:position "relative"
-                      :left     "330px"
-                      :top      "-220px"
+                      :left     left-distance
+                      :top      "-280px"
                       :width    "375px"
                       :height   "812px"
                       :margin   "40px auto"
@@ -303,7 +358,11 @@
                              :type "video/webm;codecs=\"vp8, vorbis\""})
                  ($ :source {:src "kt-hamburger.mov"
                              :type "video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\""})))
-           ($ ButtonBase {:style #js {:position "absolute" :bottom "10px" :left "10px"}
+           ($ ButtonBase {:style #js {:minHeight "10vh"
+                                      :position "absolute"
+                                      :padding "10px"
+                                      :paddingRight "40px"
+                                      :bottom (if is-mobile? "20vh" "10vh") :left "10px"}
                           :onClick #(to-page 2)}
               ($ Typography {:variant "caption"
                              :style #js {:fontWeight "800"
@@ -335,6 +394,11 @@
         [highlighted-point set-point] (react/useState 0)
         [hovered? set-hovered!]       (react/useState false)
         [selected-tab set-selected-tab] (react/useState "points")
+        is-mobile? (let [ua (.toLowerCase (.. js/navigator -userAgent))]
+                     (or
+                      (.includes ua "ipad")
+                      (.includes ua "ios")
+                      (.includes ua "android")))
         [_ window-height] (use-window-dimensions)
         ratio (min 0.8
                    (max 0.1 (- (/ (- window-height (if (= selected-tab "points") 400 500)) 766)
@@ -342,7 +406,8 @@
         tablet-spring (useSpring #js {:transform (if hovered?
                                                    (str "skew(0deg, 0deg) scale(" ratio ")")
                                                    (str "skew(5deg, 5deg) scale(" ratio ")"))
-                                      :config (.-stiff config)})]
+                                      :config (.-stiff config)})
+        [in-view-ref in-view?] (useInView #js {:threshold 0.5})]
     (react/useEffect
      (fn []
        (let [time-changed
@@ -357,6 +422,11 @@
          (fn []  (when (.-current video-ref)
                    (.removeEventListener
                     (.-current video-ref) "timeupdate" time-changed))))))
+    (react/useEffect
+     (fn []
+       (when (and in-view? (.-current video-ref))
+         (set! (.. video-ref -current -currentTime) 0)))
+     #js [in-view?])
     (<> ($ ParallaxLayer
            {:offset 2
             :speed 0.5
@@ -418,9 +488,11 @@
            {:offset 2
             :speed  1
             :style #js {:background "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)"
+                        :height "110vh"
                         :zIndex 5}}
            ($ :div {:style {:display "flex" :position "relative"
-                            :justifyContent "center"}}
+                            :justifyContent "center"}
+                    :ref in-view-ref}
               ($ :div {:style {:display "flex" :flexDirection "column"
                                :top "130px"
                                :position "relative"
@@ -437,7 +509,30 @@
                        ($ Tab {:value "points"
                                :label "Highlights"})
                        ($ Tab {:value "tt"
-                               :label "Technical Tidbits"}))
+                               :label "Technical Tidbits"})
+                       ($ :img {:src "clj.png"
+                                :title "Clojure"
+                                :alt "Clojure"
+                                :height "30px"
+                                :width  "30px"
+                                :style {:alignSelf "center" :margin "10px"}})
+                       ($ :img {:src "cljs-white.svg"
+                                :alt "ClojureScript"
+                                :title "ClojureScript"
+                                :height "30px"
+                                :width  "30px"
+                                :style {:alignSelf "center" :margin "10px"}})
+                       ($ :img {:src "postgres.svg"
+                                :alt "postgres"
+                                :title "postgres"
+                                :height "30px"
+                                :width  "30px"
+                                :style {:alignSelf "center" :margin "10px"}})
+                       ($ :img {:src "kafka.svg"
+                                :alt "kafka"
+                                :title "kafka"
+                                :height "30px"
+                                :style {:alignSelf "center" :margin "10px"}}))
 
                     ($ :div {:style {:display "flex"
                                      :flexDirection "row"
@@ -493,13 +588,19 @@
                                 :type "video/webm;codecs=\"vp8, vorbis\""})
                     ($ :source {:src "acn.mov"
                                 :type "video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\""}))))
-           ($ ButtonBase {:style #js {:position "absolute" :left "10px" :bottom "20px" :zIndex 10}
+           ($ ButtonBase {:style #js {:minHeight "10vh"
+                                      :position "absolute"
+                                      :padding "10px"
+                                      :paddingRight "40px"
+                                      :bottom (if is-mobile? "20vh" "10vh")
+                                      :left "10px"
+                                      :zIndex 10}
                           :onClick #(to-page 3)}
               ($ Typography {:variant "caption"
                              :style #js {:fontWeight "800"
                                          :color "rgba(255,255,255,0.8)"
                                          :fontSize "20px"}} "CLJSC2")
-              ($ :span {:style {:position "absolute"  :left "80px"}}
+              ($ :span {:style {:position "absolute"  :left "100px"}}
                  ($ arrow-down)))))))
 
 
@@ -517,6 +618,11 @@
 
 (defnc Cljsc2 [{:keys [to-page]}]
   (let [[selected-tab set-selected-tab] (react/useState "points")
+        is-mobile? (let [ua (.toLowerCase (.. js/navigator -userAgent))]
+                     (or
+                      (.includes ua "ipad")
+                      (.includes ua "ios")
+                      (.includes ua "android")))
         [_ window-height]               (use-window-dimensions)]
     (<> ($ ParallaxLayer
            {:offset 3
@@ -528,7 +634,7 @@
                                       :WebkitTextStrokeWidth "2px"
                                       :WebkitTextStrokeColor "#929EA6"}} "CLJSC2"))
         ($ ParallaxLayer
-           {:offset 2.9
+           {:offset 2.999
             :speed 0.4}
            ($ :img {:style {:position "relative"
                             :borderRadius "20px"
@@ -536,14 +642,7 @@
                     :height "500px"
                     :src "meblizz.jpeg"}))
         ($ ParallaxLayer
-           {:offset 2.8
-            :speed 0.6}
-           ($ :img {:style {:position "relative"
-                            :borderRadius "20px"
-                            :transform "scale(0.4) rotate(-5deg)"}
-                    :src "sc2.png"}))
-        ($ ParallaxLayer
-           {:offset 2.8
+           {:offset 2.9999999
             :speed 0.3}
            ($ :img {:style {:position "relative"
                             :borderRadius "20px"
@@ -552,25 +651,45 @@
                     :height "400px"
                     :src "sc2notebook.png"}))
         ($ ParallaxLayer
-           {:offset 2.8
+           {:offset 2.99
             :speed 0.6}
            ($ :img {:style {:position "relative"
                             :borderRadius "20px"
                             :transform "scale(0.4) rotate(-3deg)"}
                     :src "sc2deepmind.jpeg"}))
         ($ ParallaxLayer
+           {:offset 2.999
+            :speed 0.1}
+           ($ :img {:style {:position "relative"
+                            :left "20%"
+                            :transform "scale(0.6) rotate(-5deg)"}
+                    :src "sc2.png"}))
+
+
+        ($ ParallaxLayer
            {:offset 3
             :speed  1.2
             :style #js {:background "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)"
+                        :height "110vh"
                         :zIndex 3}}
            ($ :div {:style {:display "flex" :position "relative"}}
               ($ :div {:style {:display "flex" :flexDirection "column"
                                :top "130px"
                                :position "relative"
                                :margin "10px"}}
-                 ($ Typography {:variant "body1"
-                                :style #js {:color "lightgray"}}
-                    "Wrote an open source Clojure library to the StarCraft II AI API.")
+                 ($ :div {:style {:display "inline"}}
+                    ($ Typography {:variant "body1"
+                                   :style #js {:color "lightgray"
+                                               :display "inline"}}
+                       "Wrote an ")
+                    ($ :a {:href "https://github.com/bbss/cljsc2"
+                           :style #js {:background "rgba(255,255,255,0.5)"}}
+                       ($ Typography {:variant "body1" :style #js {:display "inline"}}
+                          "open source Clojure library"))
+                    ($ Typography {:variant "body1"
+                                   :style #js {:color "lightgray"
+                                               :display "inline"}}
+                       " to the StarCraft II AI API."))
                  ($ :br)
                  ($ Typography {:variant "body1"
                                 :style #js {:color "lightgray"}}
@@ -628,7 +747,13 @@
                                          :src "https://www.youtube.com/embed/c5DifklnMI8"
                                          :frameBorder 0
                                          :allow "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"})))))))
-           ($ ButtonBase {:style #js {:position "absolute" :left "10px" :bottom "20px" :zIndex 10}
+           ($ ButtonBase {:style #js {:minHeight "10vh"
+                                      :position "absolute"
+                                      :padding "10px"
+                                      :paddingRight "40px"
+                                      :bottom (if is-mobile? "20vh" "10vh")
+                                      :left "10px"
+                                      :zIndex 10}
                           :onClick #(to-page 4)}
               ($ Typography {:variant "caption"
                              :style #js {:fontWeight "800"
@@ -646,19 +771,48 @@
     :starts-at 20}])
 
 (def wb-tt
-  [{:tidbit "Early adopter of ReactJS Redux pattern."}
+  [{:tidbit "Used by millions of people!"}
+   {:tidbit "Early adopter of ReactJS Redux pattern."}
    {:tidbit "Wraps datasets with a falcorJS data resolution system: "}
-   {:tidbit "Simplifies data fetching, caching, batching for network-limited devices."}
-   {:tidbit "Uses D3.js for custom graphs e.g. invisible voronoi diagram allows intuitive touch interactions."}])
-(
-defnc Worldbank [{:keys [to-page]}]
+   {:tidbit "Easy fetching, caching, batching for slow devices."}
+   {:tidbit "D3.js for custom graphs + intuitive touch interactions."}])
+
+(defnc Worldbank [{:keys [to-page]}]
   (let [video-ref (react/useRef)
         [highlighted-point set-point]   (react/useState 0)
         [hovered? set-hovered!]         (react/useState false)
         [selected-tab set-selected-tab] (react/useState "points")
-        phone-spring (useSpring #js {:transform (if hovered?
-                                                  "skew(0deg, 0deg) scale(0.9)"
-                                                  "skew(5deg, 5deg) scale(0.8)")
+        [in-view-ref in-view?] (useInView #js {:threshold 0.5})
+        is-mobile? (let [ua (.toLowerCase (.. js/navigator -userAgent))]
+                     (or
+                      (.includes ua "ipad")
+                      (.includes ua "ios")
+                      (.includes ua "android")))
+        dims (use-window-dimensions)
+        font-size (cond  (< (first dims) 660) "12px"
+                         (< (first dims) 780) "14px"
+                         :else "18px"
+                         )
+        available-phone-width (- (first dims) (cond  (< (first dims) 660) 200
+                                                     (< (first dims) 780) 300
+                                                     :else 400
+                                                     ))
+        ratio (if is-mobile?
+                (min 1
+                     (max 0.1 (- (/ (- (second dims)
+                                       (if (= selected-tab "points") 400 500))
+                                    766)
+                                 0.2)))
+                (min 0.8
+                     (max 0.1 (- (/ available-phone-width
+                                    766)
+                                 0.2))))
+        phone-spring (useSpring #js {:transform
+                                     (cond
+                                       hovered?
+                                       (str "skew(0deg, 0deg) scale(" ratio ")")
+                                       :else
+                                       (str "skew(5deg, 5deg) scale(" ratio ")"))
                                      :config (.-stiff config)})]
     (react/useEffect
          (fn []
@@ -676,12 +830,18 @@ defnc Worldbank [{:keys [to-page]}]
                       (.removeEventListener
                        (.-current video-ref)
                        "timeupdate" time-changed))))))
+    (react/useEffect
+     (fn []
+       (when (and in-view? (.-current video-ref))
+         (set! (.. video-ref -current -currentTime) 0)))
+     #js [in-view?])
     (<> ($ ParallaxLayer
            {:offset 4
             :speed 0.5
             :style #js {:height "40px"
                         :zIndex 5}}
            ($ Typography {:variant "h1"
+                          :ref in-view-ref
                           :style #js {:color "transparent"
                                       :WebkitTextStrokeWidth "2px"
                                       :WebkitTextStrokeColor "#929EA6"}} "data.worldbank.org"))
@@ -718,7 +878,8 @@ defnc Worldbank [{:keys [to-page]}]
             :speed  1.2
             :style #js {:background "linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 1px) 0% 0% / 40px 40px, linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px) rgb(54, 54, 69)"
                         :zIndex 3}}
-           ($ :div {:style {:display "flex" :position "relative"}}
+           ($ :div {:style {:display "flex" :position "relative"}
+                    :ref in-view-ref}
               ($ :div {:style {:display "flex" :flexDirection "column"
                                :top "130px"
                                :position "relative"
@@ -746,15 +907,45 @@ defnc Worldbank [{:keys [to-page]}]
                        ($ Tab {:value "points"
                                :label "Highlights"})
                        ($ Tab {:value "tt"
-                               :label "Technical Tidbits"}))
+                               :label "Technical Tidbits"})
+                       ($ :img {:src    "js.png"
+                                :alt    "JavaScript"
+                                :title  "JavaScript"
+                                :height "30px"
+                                :width  "30px"
+                                :style {:alignSelf "center" :margin "10px"}})
+                       ($ :img {:src "node.svg"
+                                :alt "node.js"
+                                :title "node.js"
+                                :height "30px"
+                                :width  "30px"
+                                :style {:alignSelf "center" :margin "10px"}})
+                       ($ :img {:src    "d3.svg"
+                                :alt    "JavaScript"
+                                :title  "JavaScript"
+                                :height "30px"
+                                :width  "30px"
+                                :style {:alignSelf "center" :margin "10px"}})
+                       ($ :img {:src    "falcor.svg"
+                                :alt    "falcorJS"
+                                :title  "falcorJS"
+                                :height "30px"
+                                :width  "30px"
+                                :style {:alignSelf "center" :margin "10px"}})
+                       ($ :img {:src "redis-cube.svg"
+                                :alt "redis"
+                                :title "redis"
+                                :height "30px"
+                                :width  "30px"
+                                :style {:alignSelf "center" :margin "10px"}}))
 
                     ($ :div {:style {:display "flex"
                                      :flexDirection "row"
                                      :marginTop "20px"
-                                     :position "relative"
-                                     :left "20px"}}
+                                     :position "relative"}}
                        ($ Slide {:direction "right" :in (= selected-tab "points")}
                           ($ :div {:style {:position      "absolute"
+                                           :top           "5px"
                                            :display       "flex"
                                            :flexDirection "column"}}
                              (->> wb-points
@@ -766,6 +957,7 @@ defnc Worldbank [{:keys [to-page]}]
                                                                 :transition "200ms linear"}
                                                     :onClick #(set! (.. video-ref -current -currentTime) starts-at)}
                                             ($ Typography {:variant "h6"
+                                                           :style #js {:fontSize font-size}
                                                            :color (if (= index highlighted-point) "secondary" "primary")} point)))))))
 
                        ($ Slide {:direction "left" :in (= selected-tab "tt")}
@@ -775,6 +967,8 @@ defnc Worldbank [{:keys [to-page]}]
                                   (map (fn [[index {:keys [tidbit]}]]
                                          ($ Typography {:key index
                                                         :variant "h6"
+                                                        :style #js {:paddingLeft "10px"
+                                                                    :fontSize font-size}
                                                         :color "primary"} tidbit)))))))))
               ($ :div {:key 0
                        :style {:margin "30px"}}
@@ -782,12 +976,31 @@ defnc Worldbank [{:keys [to-page]}]
                     {:onMouseOver #(set-hovered! true)
                      :onMouseOut  #(set-hovered! false)
                      :style
-                     #js {:width    "330px"
-                          :height   "714px"
-                          :margin "40px auto"
-                          :borderRadius "40px"
-                          :transform (.-transform phone-spring)
-                          :boxShadow "0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111"}}
+                     (if is-mobile?
+                       #js {:width    "330px"
+                            :height   "714px"
+                            :position "absolute"
+                            :top "40vh"
+                            :left (- (/ (first dims) 2) 155)
+                            :margin "40px auto"
+                            :borderRadius "40px"
+                            :transform (.-transform phone-spring)
+                            :boxShadow "0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111"}
+                       #js {:width    "330px"
+                            :height   "714px"
+                            :right    (cond  (< (first dims) 660) 230
+                                             (< (first dims) 780) 120
+                                             :else 100
+                                             )
+                            :top    (cond  (< (first dims) 660) 100
+                                           (< (first dims) 780) 100
+                                           :else 50
+                                           )
+                            :position "relative"
+                            :margin "40px auto"
+                            :borderRadius "40px"
+                            :transform (.-transform phone-spring)
+                            :boxShadow "0px 0px 0px 11px #1f1f1f, 0px 0px 0px 13px #191919, 0px 0px 0px 20px #111"})}
                     ($ :video {:autoPlay    true
                                :muted       true
                                :loop        true
@@ -801,14 +1014,15 @@ defnc Worldbank [{:keys [to-page]}]
                                    :type "video/webm;codecs=\"vp8, vorbis\""})
                        ($ :source {:src "wb.mov"
                                    :type "video/mp4;codecs=\"avc1.42E01E, mp4a.40.2\""})))))
-           ($ ButtonBase {:style #js {:position "absolute" :left "10px" :bottom "20px" :zIndex 10}
+           ($ ButtonBase {:style #js {:zIndex 10 :position "absolute"
+                                      :padding "20px" :bottom 0 :left "10px"}
                           :onClick #(to-page 0)}
               ($ Typography {:variant "caption"
                              :style #js {:fontWeight "800"
                                          :color "rgba(255,255,255,0.8)"
                                          :fontSize "20px"}} "TOP")
               ($ :span {:style {:transform "rotate(180deg)"
-                                :position "absolute"  :left "50px"}}
+                                :position "absolute"  :left "80px"}}
                  ($ arrow-down)))))))
 
 (def works {'korean-tools
@@ -820,29 +1034,41 @@ defnc Worldbank [{:keys [to-page]}]
             'worldbank
             Worldbank})
 
-(def orange "#fadeac")
-
-(def gray "#929EA6")
-
-(def theme (createTheme
-            (clj->js {:typography
-                      {:fontFamily "Rubik, sans-serif"}
-                      :palette {:primary {:light gray
-                                          :main gray
-                                          :dark gray
-                                          :contrastText "#fff"}
-                                :secondary {:light orange
-                                            :main orange
-                                            :dark orange
-                                            :contrastText "#fff"}}})))
+(def theme
+  (createTheme
+   (clj->js {:typography
+             {:fontFamily "Rubik, sans-serif"}
+             :palette {:primary {:light gray
+                                 :main gray
+                                 :dark gray
+                                 :contrastText "#fff"}
+                       :secondary {:light orange
+                                   :main orange
+                                   :dark orange
+                                   :contrastText "#fff"}}})))
 
 (defnc Menu [{:keys [to-page]}]
   (let [pop-ref    (useSpringRef)
         reveal-ref (useSpringRef)
-        [in-view-ref top-in-view?] (useInView #js {})
+        [in-view-ref top-in-view?] (useInView #js {:threshold 0.5})
+        dims (use-window-dimensions)
+        title-font-size (cond (> (first dims) 1080) 80
+                              :else 60)
+        font-size (cond (> (second dims) 700) 40
+                              :else 30)
         links (map-indexed vector ["korean.tools" "aircraft-noise.org" "cljsc2" "data.worldbank.org"])
+        is-mobile? (let [ua (.toLowerCase (.. js/navigator -userAgent))]
+                     (or
+                      (.includes ua "ipad")
+                      (.includes ua "ios")
+                      (.includes ua "android")))
         pop-spring (useSpring #js {:ref pop-ref
-                                   :transform (if top-in-view? "scale(1)" " scale(0)")})
+                                   :transform (cond
+                                                (and (< (.-innerWidth js/window) 1000)
+                                                     (not is-mobile?))
+                                                "scale(0)"
+                                                top-in-view? "scale(1)"
+                                                :else "scale(0)")})
         trail-spring (useTransition (if top-in-view? (to-array links) #js [])
                                     #js {:ref reveal-ref
                                          :reset true
@@ -854,36 +1080,41 @@ defnc Worldbank [{:keys [to-page]}]
                                                      :x (if top-in-view? 0 20)}
                                          :from #js {:opacity 0 :x 20 :height "100px"}})]
     (useChain (if top-in-view? #js [pop-ref reveal-ref] #js [reveal-ref pop-ref]))
-    ($ :div {:ref in-view-ref}
-       ($ (.-div animated)
-          {
-           :style #js {:display "flex"
-                       :position "absolute"
-                       :flexDirection "column"
-                       :margin "20px"
-                       :background "rgba(100, 100, 100, 0.7)"
-                       :padding "100px"
-                       :clipPath  "polygon(0 1%, 100% 0%, 90% 95%, 10% 90%)"
-                       :transform (.-transform pop-spring)}}
-          (trail-spring
-           (fn [props [i item] opts]
-             ($ (.-div animated) {:style #js {:opacity (.-opacity props)
-                                              :height (.-height props)
-                                              :x (.-x props)}
-                                  :key item}
-                ($ (.-div animated) {:style #js {#_#_:height (.-height props)}}
-                   ($ Button {:variant "outlined"
-                              :style #js {:margin "15px"
-                                          :padding "15px"
-                                          :textTransform "none"}
-                              :onClick #(to-page (inc i))}
-                      ($ Typography {:variant "h3"
-                                     :style #js {:color "transparent"
-                                                 :WebkitTextStrokeWidth "1px"
-                                                 :WebkitTextStrokeColor "white"}}
-                         item)
-                      )))))))
-    ))
+    ($ (.-div animated)
+       {:style #js {:display "flex"
+                    #_#_:position "absolute"
+                    #_#_:justifySelf "center"
+                    :flexDirection "column"
+                    :margin "20px"
+                    :background "linear-gradient(to right, rgba(100, 100, 100, 0.15), rgba(100, 100, 100, 0.3))"
+                    :padding "100px"
+                    :clipPath  "polygon(0 1%, 100% 0%, 90% 95%, 10% 90%)"
+                    :transform (.-transform pop-spring)}
+        :ref in-view-ref}
+       ($ :p {:style {:fontFamily "'Zen Tokyo Zoo', cursive"
+                      :fontSize (str title-font-size "px")
+                      :whiteSpace "nowrap"
+                      :color "white"
+                      }} "some of my work")
+       (trail-spring
+        (fn [props [i item] opts]
+          ($ (.-div animated) {:style #js {:opacity (.-opacity props)
+                                           :height (.-height props)
+                                           :x (.-x props)}
+                               :key item}
+             ($ (.-div animated) {:style #js {#_#_:height (.-height props)}}
+                ($ Button {:variant "outlined"
+                           :style #js {:margin (if (> (second dims) 700) "15px" "0px")
+                                       :padding (if (> (second dims) 700) "15px" "0px")
+                                       :textTransform "none"}
+                           :onClick #(to-page (inc i))}
+                   ($ Typography {:variant "h3"
+                                  :style #js {:color "transparent"
+                                              :fontSize font-size
+                                              :WebkitTextStrokeWidth "1px"
+                                              :WebkitTextStrokeColor "white"}}
+                      item)
+                   ))))))))
 
 
 (defnc App []
@@ -895,22 +1126,16 @@ defnc Worldbank [{:keys [to-page]}]
                      (or
                       (.includes ua "ipad")
                       (.includes ua "ios")
-                      (.includes ua "android")))
-        ]
+                      (.includes ua "android")))]
 
 
-    #_(react/useEffect (fn [] (when (.-current parallax-ref) (.scrollTo (.-current parallax-ref) 0))
+    #_(react/useEffect (fn [] (to-page 0)
                        (fn [])))
     ($ ThemeProvider
        {:theme theme}
        ($ Parallax {:ref parallax-ref
                     :pages (inc (count works)) :style #js {:top 0 :left 0}}
-          #_(->> pages
-                 (map-indexed
-                  (fn [index page]
-                    ($ ParallaxLayer {:offset index}
-                       (str page)))))
-          ($ :div {:style {:borderRadius "0 0 30px 30px"
+          #_($ :div {:style {:borderRadius "0 0 30px 30px"
                            :height "calc(100vh - 100px)"
                            :overflow "hidden"}}
              ($ ParallaxLayer
@@ -929,41 +1154,56 @@ defnc Worldbank [{:keys [to-page]}]
 
           ($ ParallaxLayer {:offset 0}
              ($ :div {:style {:display "flex"
-                              :flexDirection (if (and long? is-mobile?) "column" "row")
+                              :flexDirection (if (and long? thin? is-mobile?) "column" "row")
                               :width "100vw"
                               :height "100%"}}
                 ($ :div {:style {:display "flex"
                                  :flexDirection "column"
                                  :alignItems  "center"
                                  :margin "30px"}}
-                   ($ :img {:style {:borderRadius "20px"
+                   ($ :img {:style {:borderRadius "50%"
                                     :zIndex 10
                                     :minHeight "30%"
                                     :maxHeight "50%"
                                     :maxWidth "30vw"
                                     :verticalAlign "bottom"
                                     :object-fit "cover"}
-                            :src    "meblizz.jpeg"})
+                            :src    "baruch.png"})
                    ($ :div {}
                       ($ Typography {:variant "h2"
                                           :style #js {:whiteSpace "nowrap"}} "Baruch Berger")
                       ($ Typography {:variant "h3"
-                                     :style #js {:whiteSpace "nowrap"}} "software engineer")))
-                ($ :div {:style {:position "relative" :margin "30px" :display "flex" :flexDirection "column"}}
-                   #_#_#_($ Typography {:variant "h6"}
-                      "Making highly interactive applications.")
-                   ($ Typography {:variant "h6"}
-                      "Keeping eyes on their complexity; using and building tools.")
-                   ($ Typography {:variant "h6"}
-                      "Enjoy exploring new programming stuff.")
-                   ($ Menu {:to-page to-page}))
+                                     :style #js {:whiteSpace "nowrap"}} "software engineer")
+                      ($ :a {:href "https://github.com/bbss"
+                             :style {:display "flex"
+                                     :marginTop "20px"
+                                     :justifyContent "center"}}
+                         ($ :img {:style {:position "relative" :marginRight "10px"}
+                                  :height "30px"
+                                  :src "github.png"})
+                         ($ Typography {:variant "h6"
+                                        :style #js {:display "inline"
+                                                    :whiteSpace "nowrap"}} "https://github.com/bbss"))
+                      ($ :a {:href "mailto:baruchberger@gmail.com"
+                             :style {:display "flex"
+                                     :justifyContent "center"}}
+                         ($ :img {:style {:position "relative" :marginLeft "7px"
+                                          :marginRight "9px"
+                                          :width "35px"}
+                                  :src "mail.svg"})
+                         ($ Typography {:variant "h6"
+                                        :style #js {:display "inline"
+                                                    :whiteSpace "nowrap"}}
+                            "baruchberger@gmail.com"))))
+                ($ Menu {:to-page to-page})
 
-                ($ ButtonBase {:style #js {:position "static"
+                ($ ButtonBase {:style #js {:position "absolute"
+                                           :bottom "10vh"
+                                           :left "430px"
                                            :flexDirection  "column"
                                            :display        "flex"
                                            :alignItems     "flex-start"
-                                           :justifyContent "flex-end"
-                                           :cursor         "pointer"}
+                                           :justifyContent "flex-end"}
                                :onClick #(.scrollTo (.-current parallax-ref) 1)}
                    ($ Typography {:variant "caption"
                                   :style #js {:fontWeight "800"
@@ -978,4 +1218,15 @@ defnc Worldbank [{:keys [to-page]}]
           ($ KoreanTools {:to-page to-page})
           ($ AircraftNoise {:to-page to-page})
           ($ Cljsc2 {:to-page to-page})
-          ($ Worldbank {:to-page to-page})))))
+          ($ Worldbank {:to-page to-page}))
+       ($ :div {:style {:position "static"
+
+                        :height "100vh"
+                        :width "100vw"
+                        :top 0
+                        :left 0
+                        :background "linear-gradient(-45deg, #47C5CF, #94DABC, #FFCF54, #FAD1E2)"
+                        :backgroundSize "400% 400%"
+                        :animation "gradient 15s ease infinite"
+                        }}
+          ))))

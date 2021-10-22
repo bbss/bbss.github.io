@@ -58,11 +58,11 @@ return "unknown";
 var self__ = this;
 var this$ = this;
 try{return cljs.core.str.cljs$core$IFn$_invoke$arity$1(v);
-}catch (e55428){var e = e55428;
+}catch (e55477){var e = e55477;
 if(cljs.core.truth_(goog.DEBUG)){
 taoensso.timbre._log_BANG_.cljs$core$IFn$_invoke$arity$11(taoensso.timbre._STAR_config_STAR_,new cljs.core.Keyword(null,"warn","warn",-436710552),"com.fulcrologic.fulcro.inspect.transit",null,20,new cljs.core.Keyword(null,"p","p",151049309),new cljs.core.Keyword(null,"auto","auto",-566279492),(new cljs.core.Delay((function (){
 return new cljs.core.PersistentVector(null, 1, 5, cljs.core.PersistentVector.EMPTY_NODE, ["Transit was unable to encode a value. See https://book.fulcrologic.com/#warn-transit-encode-failed"], null);
-}),null)),null,456042710,null);
+}),null)),null,907013220,null);
 } else {
 }
 
@@ -92,10 +92,10 @@ com.fulcrologic.fulcro.inspect.transit.write_handlers = (function com$fulcrologi
 return cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([cljs.core.PersistentArrayMap.createAsIfByAssoc([cljs.core.ExceptionInfo,(new com.fulcrologic.fulcro.inspect.transit.ErrorHandler()),"default",(new com.fulcrologic.fulcro.inspect.transit.DefaultHandler())]),com.fulcrologic.fulcro.algorithms.transit.write_handlers()], 0));
 });
 com.fulcrologic.fulcro.inspect.transit.read_handlers = (function com$fulcrologic$fulcro$inspect$transit$read_handlers(){
-return cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 1, ["js-error",(function (p__55453){
-var vec__55454 = p__55453;
-var msg = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__55454,(0),null);
-var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__55454,(1),null);
+return cljs.core.merge.cljs$core$IFn$_invoke$arity$variadic(cljs.core.prim_seq.cljs$core$IFn$_invoke$arity$2([new cljs.core.PersistentArrayMap(null, 1, ["js-error",(function (p__55478){
+var vec__55479 = p__55478;
+var msg = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__55479,(0),null);
+var data = cljs.core.nth.cljs$core$IFn$_invoke$arity$3(vec__55479,(1),null);
 return cljs.core.ex_info.cljs$core$IFn$_invoke$arity$2(msg,data);
 })], null),com.fulcrologic.fulcro.algorithms.transit.read_handlers()], 0));
 });
