@@ -431,9 +431,6 @@
                                           (if (= selected-tab "points") 400 500)) 766)
                                     0.1)))
                    (if zoomed? 0.2 0)))
-        #_(min 0.8
-                   (max 0.1 (- (/ (- window-height (if (= selected-tab "points") 400 500)) 766)
-                               0.1)))
         tablet-spring (useSpring #js {:transform (if zoomed?
                                                    (str "skew(0deg, 0deg) scale(" ratio ")")
                                                    (str "skew(5deg, 5deg) scale(" ratio ")"))
